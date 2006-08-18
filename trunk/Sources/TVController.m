@@ -215,7 +215,6 @@ static int TVSetReminder = 1;
 - (IBAction) previousDay:(id)sender
 {
 	int index = [dayMenu indexOfSelectedItem];
-	int len = [dayMenu numberOfItems];
 	if (index > 0)
 	{
 		[dayMenu selectItemAtIndex:index - 1];

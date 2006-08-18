@@ -25,8 +25,9 @@
 
 @interface NSArray (TVUtils)
 
-- (NSString *)stringByFormattingAsProgramsList;
++ (id)arrayCenteredInDate:(NSCalendarDate *)date range:(int)days;
 
+- (NSString *)stringByFormattingAsProgramsList;
 - (void)populateWithDate:(NSCalendarDate *)date range:(int)days;
 
 @end
