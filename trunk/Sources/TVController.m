@@ -61,17 +61,6 @@ static int TVSetReminder = 1;
 {
 	self = [super init];
 	controlsVisible = NO;
-	int h;
-	NSMutableArray *hArr = [NSMutableArray arrayWithCapacity:24];
-	for (h = 0; h < 24; h++)
-	{
-		[hArr insertObject:[NSString stringWithFormat:@"%.2d:00", h]
-				   atIndex:h];
-	}
-	hours = [[hArr copy] retain];
-	
-	days = [[NSArray arrayCenteredInDate:[NSCalendarDate calendarDate] range:DAYS_AHEAD] retain];
-	
 	return self;
 }
 
@@ -91,8 +80,8 @@ static int TVSetReminder = 1;
 - (void) dealloc
 {
 	[preferencesController release];
-	[days release];
-	[hours release];
+	[toolbar release];
+	[timer release];
 	[super dealloc];
 }
 
@@ -132,6 +121,18 @@ static int TVSetReminder = 1;
 			nil],		
 		nil];
 	[sourcesController setContent:sources];
+	
+	int h;
+	NSMutableArray *hArr = [NSMutableArray arrayWithCapacity:24];
+	for (h = 0; h < 24; h++)
+	{
+		[hArr insertObject:[NSString stringWithFormat:@"%.2d:00", h]
+				   atIndex:h];
+	}
+	[hoursController setContent:[hArr retain]];
+	
+	[daysController setContent:[[NSArray arrayCenteredInDate:[NSCalendarDate calendarDate] 
+													   range:DAYS_AHEAD] retain]];	
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self
 											 selector:@selector(handleSourceChange:)
@@ -187,35 +188,27 @@ static int TVSetReminder = 1;
 						source:[[[sourcesController selectedObjects] objectAtIndex:0] valueForKey:@"source"]];
 }
 
+- (void)updateDayMenu
+{
+	NSString *title = [dayMenu titleOfSelectedItem];
+	[daysController setContent:[[NSArray arrayCenteredInDate:[NSCalendarDate dateWithString:title
+																			 calendarFormat:@"%d/%m/%Y"]
+													   range:DAYS_AHEAD] retain]];
+	[daysController setSelectionIndex:DAYS_AHEAD];
+	[dayMenu selectItemWithTitle:title];
+}
+
+- (void)updateDayMenuWithDate:(NSCalendarDate *)date
+{
+	[daysController setContent:[[NSArray arrayCenteredInDate:date
+													   range:DAYS_AHEAD] retain]];
+	[daysController setSelectionIndex:DAYS_AHEAD];
+	[dayMenu selectItemWithTitle:[date descriptionWithCalendarFormat:@"%d/%m/%Y"]];
+}
+
 - (IBAction) updateDayThenTune:(id)sender
 {
-/*
-	SEL action = [dayMenu action];
-	NSString *title = [[dayMenu titleOfSelectedItem] retain];
-	[dayMenu setAction:NULL];
-	[dayMenu setTarget:nil];
-//	NSArray *oldDays = days;
-//	days = [[NSArray arrayCenteredInDate:[NSCalendarDate dateWithString:title
-//														 calendarFormat:@"%d/%m/%Y"]
-//								   range:DAYS_AHEAD] retain];
-	//	NSLog(@"%@ (%d)", days, [days retainCount]);
-	[dayMenu unbind:@"content"];
-//	NSLog(@"%@", days);
-	[self setDays:[NSArray arrayCenteredInDate:[NSCalendarDate dateWithString:title
-															   calendarFormat:@"%d/%m/%Y"]
-										 range:DAYS_AHEAD]];
-	[dayMenu bind:@"content"
-		 toObject:self
-	  withKeyPath:@"days"
-		  options:nil];
-	[dayMenu selectItemWithTitle:title];
-	[dayMenu setAction:action];
-	[dayMenu setTarget:self];
-	[title release];
-//	[oldDays release];
-//	NSString *title = [dayMenu titleOfSelectedItem];
-//	NSLog(@"%@", title);
-*/
+	[self updateDayMenu];
 	[self tune:sender];
 }
 
@@ -226,6 +219,7 @@ static int TVSetReminder = 1;
 	if (index > 0)
 	{
 		[dayMenu selectItemAtIndex:index - 1];
+		[self updateDayMenu];
 		[self tune:sender];
 	}
 }
@@ -237,6 +231,7 @@ static int TVSetReminder = 1;
 	if (index < len - 1)
 	{
 		[dayMenu selectItemAtIndex:index + 1];
+		[self updateDayMenu];
 		[self tune:sender];
 	}
 }
@@ -261,14 +256,14 @@ static int TVSetReminder = 1;
 
 - (IBAction)primeTime:(id)sender
 {
-	[dayMenu selectItemWithTitle:[[NSCalendarDate calendarDate] descriptionWithCalendarFormat:@"%d/%m/%Y"]];
-	[hourMenu selectItemWithTitle:PRIMETIME_HOUR];
+	[self updateDayMenuWithDate:[NSCalendarDate calendarDate]];
+	[hourMenu selectItemWithTitle:PRIMETIME_HOUR];	
 	[self tune:nil];
 }
 
 - (IBAction)nowOnAir:(id)sender
 {
-	[dayMenu selectItemWithTitle:[[NSCalendarDate calendarDate] descriptionWithCalendarFormat:@"%d/%m/%Y"]];
+	[self updateDayMenuWithDate:[NSCalendarDate calendarDate]];
 	[hourMenu selectItemWithTitle:[[NSCalendarDate calendarDate] descriptionWithCalendarFormat:@"%H:00"]];
 	[self tune:nil];
 }
@@ -405,19 +400,19 @@ static int TVSetReminder = 1;
 }
 
 #pragma mark === Setters/Getters ===
-
-- (void)setDays:(NSArray *)d
-{
-	[d retain];
-	[days release];
-	days = d;
-}
-
-- (NSArray *)days
-{
-	return days;
-}
-
+/*
+ - (void)setDays:(NSArray *)d
+ {
+	 [d retain];
+	 [days release];
+	 days = d;
+ }
+ 
+ - (NSArray *)days
+ {
+	 return days;
+ }
+ */
 
 #pragma mark === NSToolbar delegate methods ===
 

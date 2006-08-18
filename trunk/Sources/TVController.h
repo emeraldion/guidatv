@@ -54,6 +54,8 @@ extern NSString *TVTunerSatellite;
 	IBOutlet TVGuide *guide;
 	IBOutlet ProgramArrayController *programsController;
 	IBOutlet NSArrayController *sourcesController;
+	IBOutlet NSArrayController *daysController;
+	IBOutlet NSArrayController *hoursController;
 	IBOutlet NSWindow *icalsheet;
 	IBOutlet NSWindow *donateSheet;
 	IBOutlet NSPopUpButton *hourMenu;
@@ -64,8 +66,8 @@ extern NSString *TVTunerSatellite;
 	NSToolbar *toolbar;
 	NSTimer *timer;
 	BOOL controlsVisible;
-	NSArray *days;
-	NSArray *hours;
+//	NSArray *days;
+//	NSArray *hours;
 }
 
 - (IBAction) showPreferencesPanel:(id)sender;
@@ -96,8 +98,8 @@ extern NSString *TVTunerSatellite;
 
 #pragma mark === Setters/Getters ===
 
-- (void)setDays:(NSArray *)d;
-- (NSArray *)days;
+//- (void)setDays:(NSArray *)d;
+//- (NSArray *)days;
 
 #pragma mark === NSToolbar delegate methods ===
 

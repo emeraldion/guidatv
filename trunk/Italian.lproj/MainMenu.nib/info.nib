@@ -15,41 +15,6 @@
 	</dict>
 	<key>IBFramework Version</key>
 	<string>446.1</string>
-	<key>IBGroupedObjects</key>
-	<dict>
-		<key>1</key>
-		<array>
-			<string>352</string>
-			<string>372</string>
-			<string>378</string>
-		</array>
-		<key>2</key>
-		<array>
-			<string>352</string>
-			<string>372</string>
-			<string>378</string>
-		</array>
-		<key>5</key>
-		<array>
-			<string>352</string>
-			<string>372</string>
-			<string>378</string>
-		</array>
-		<key>6</key>
-		<array>
-			<string>352</string>
-			<string>372</string>
-			<string>378</string>
-		</array>
-		<key>7</key>
-		<array>
-			<string>352</string>
-			<string>372</string>
-			<string>378</string>
-		</array>
-	</dict>
-	<key>IBLastGroupID</key>
-	<string>8</string>
 	<key>IBLockedObjects</key>
 	<array>
 		<integer>213</integer>
@@ -58,7 +23,6 @@
 	<key>IBOpenObjects</key>
 	<array>
 		<integer>29</integer>
-		<integer>21</integer>
 	</array>
 	<key>IBSystem Version</key>
 	<string>8J135</string>
