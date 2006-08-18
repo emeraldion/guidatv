@@ -367,10 +367,10 @@ static NSString *RESULTS_END = @"<br><br>";
 		startDate,
 		[[guide nameForChannel:channel] stringByPaddingToLength:20
 													 withString:@" "
-												  endingAtIndex:0],
+												startingAtIndex:0],
 		[title stringByPaddingToLength:TVProgramMaxTitleLength
 							withString:@" "
-						 endingAtIndex:0],
+					   startingAtIndex:0],
 		genre];
 }
 

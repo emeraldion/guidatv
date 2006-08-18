@@ -29,4 +29,9 @@
 	TVProgram *program;
 }
 
+#pragma mark === Accessors ===
+
+-(void)setProgram:(TVProgram *)program;
+- (TVProgram *)program;
+
 @end
