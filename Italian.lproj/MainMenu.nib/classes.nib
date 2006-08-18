@@ -47,10 +47,12 @@
                 alreadyDonated = NSButton; 
                 controlsBg = NSImageView; 
                 dayMenu = NSPopUpButton; 
+                daysController = NSArrayController; 
                 donateSheet = NSWindow; 
                 drawer = id; 
                 guide = TVGuide; 
                 hourMenu = NSPopUpButton; 
+                hoursController = NSArrayController; 
                 icalsheet = NSWindow; 
                 programsController = ProgramArrayController; 
                 sourcesController = NSArrayController; 
