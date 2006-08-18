@@ -369,20 +369,21 @@ static int TVSetReminder = 1;
 	{
 		NSString *filePath =  [sPanel filename];
 		[programsController commitEditing];
-		NSString *content = [[programsController content] stringByFormattingAsProgramsList];
+		NSArray *content = (NSArray *)[programsController content];
+		NSString *lines = [content stringByFormattingAsProgramsList];
 		
 		// Here we deal with a Tiger-only API. Test for compliance.
 		BOOL success = NO;
-		if ([content respondsToSelector:@selector(writeToFile:atomically:encoding:error:)])
+		if ([lines respondsToSelector:@selector(writeToFile:atomically:encoding:error:)])
 		{
-			success = [content writeToFile:filePath
+			success = [lines writeToFile:filePath
 								atomically:YES
 								  encoding:NSMacOSRomanStringEncoding
 									 error:NULL];
 		}
 		else
 		{
-			success = [content writeToFile:filePath
+			success = [lines writeToFile:filePath
 								atomically:YES];
 		}
 		

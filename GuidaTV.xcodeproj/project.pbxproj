@@ -58,9 +58,7 @@
 		2B31742B0A95C3A3009E38F1 /* drawer.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174220A95C3A3009E38F1 /* drawer.tiff */; };
 		2B31742C0A95C3A3009E38F1 /* icaltoolbar.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174230A95C3A3009E38F1 /* icaltoolbar.tif */; };
 		2B31742D0A95C3A3009E38F1 /* inspectorButton.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174240A95C3A3009E38F1 /* inspectorButton.tiff */; };
-		2B31742E0A95C3A3009E38F1 /* popcorntub.psd in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174250A95C3A3009E38F1 /* popcorntub.psd */; };
 		2B31742F0A95C3A4009E38F1 /* popcorntub.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174260A95C3A3009E38F1 /* popcorntub.tif */; };
-		2B3174300A95C3A4009E38F1 /* primaserata.psd in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174270A95C3A3009E38F1 /* primaserata.psd */; };
 		2B3174310A95C3A4009E38F1 /* primaserata.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174280A95C3A3009E38F1 /* primaserata.tif */; };
 		2B3174320A95C3A4009E38F1 /* reload.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174290A95C3A3009E38F1 /* reload.tiff */; };
 		2B3174330A95C3A4009E38F1 /* search.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B31742A0A95C3A3009E38F1 /* search.tif */; };
@@ -272,9 +270,7 @@
 		2B3174220A95C3A3009E38F1 /* drawer.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = drawer.tiff; path = "Images/Toolbar Icons/drawer.tiff"; sourceTree = "<group>"; };
 		2B3174230A95C3A3009E38F1 /* icaltoolbar.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = icaltoolbar.tif; path = "Images/Toolbar Icons/icaltoolbar.tif"; sourceTree = "<group>"; };
 		2B3174240A95C3A3009E38F1 /* inspectorButton.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = inspectorButton.tiff; path = "Images/Toolbar Icons/inspectorButton.tiff"; sourceTree = "<group>"; };
-		2B3174250A95C3A3009E38F1 /* popcorntub.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = popcorntub.psd; path = "Images/Toolbar Icons/popcorntub.psd"; sourceTree = "<group>"; };
 		2B3174260A95C3A3009E38F1 /* popcorntub.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = popcorntub.tif; path = "Images/Toolbar Icons/popcorntub.tif"; sourceTree = "<group>"; };
-		2B3174270A95C3A3009E38F1 /* primaserata.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = primaserata.psd; path = "Images/Toolbar Icons/primaserata.psd"; sourceTree = "<group>"; };
 		2B3174280A95C3A3009E38F1 /* primaserata.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = primaserata.tif; path = "Images/Toolbar Icons/primaserata.tif"; sourceTree = "<group>"; };
 		2B3174290A95C3A3009E38F1 /* reload.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = reload.tiff; path = "Images/Toolbar Icons/reload.tiff"; sourceTree = "<group>"; };
 		2B31742A0A95C3A3009E38F1 /* search.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = search.tif; path = "Images/Toolbar Icons/search.tif"; sourceTree = "<group>"; };
@@ -597,9 +593,7 @@
 				2B3174220A95C3A3009E38F1 /* drawer.tiff */,
 				2B3174230A95C3A3009E38F1 /* icaltoolbar.tif */,
 				2B3174240A95C3A3009E38F1 /* inspectorButton.tiff */,
-				2B3174250A95C3A3009E38F1 /* popcorntub.psd */,
 				2B3174260A95C3A3009E38F1 /* popcorntub.tif */,
-				2B3174270A95C3A3009E38F1 /* primaserata.psd */,
 				2B3174280A95C3A3009E38F1 /* primaserata.tif */,
 				2B3174290A95C3A3009E38F1 /* reload.tiff */,
 				2B31742A0A95C3A3009E38F1 /* search.tif */,
@@ -716,8 +710,8 @@
 				2BB50AD20A39872C00BA7F59 /* Channels.plist in Resources */,
 				2BB717040A3DE737000BB181 /* AppleScriptKit.sdef in Resources */,
 				2B7954230A42EDFB00EBB75E /* Localizable.strings in Resources */,
-				2B7359060A441D4500799D62 /* Preferences.nib in Resources */,
 				2B31745C0A95C46C009E38F1 /* GuidaTV-on.png in Resources */,
+				2B7359060A441D4500799D62 /* Preferences.nib in Resources */,
 				2B418F620A4C9E640065009C /* About.nib in Resources */,
 				2BCE836A0A8F6DF20027CBB4 /* TVProgramDocument.nib in Resources */,
 				2B716D4F0A924D9800CC708D /* MainMenu.nib in Resources */,
@@ -760,9 +754,7 @@
 				2B31742B0A95C3A3009E38F1 /* drawer.tiff in Resources */,
 				2B31742C0A95C3A3009E38F1 /* icaltoolbar.tif in Resources */,
 				2B31742D0A95C3A3009E38F1 /* inspectorButton.tiff in Resources */,
-				2B31742E0A95C3A3009E38F1 /* popcorntub.psd in Resources */,
 				2B31742F0A95C3A4009E38F1 /* popcorntub.tif in Resources */,
-				2B3174300A95C3A4009E38F1 /* primaserata.psd in Resources */,
 				2B3174310A95C3A4009E38F1 /* primaserata.tif in Resources */,
 				2B3174320A95C3A4009E38F1 /* reload.tiff in Resources */,
 				2B3174330A95C3A4009E38F1 /* search.tif in Resources */,
