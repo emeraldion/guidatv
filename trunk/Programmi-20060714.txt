@@ -1,0 +1,38 @@
+# Programs list exported on 2006-07-14 19:32:10 +0200 by
+# GuidaTV <http://www.emeraldion.it/software/macosx/guidatv/>
+
+Data              Canale                Titolo                                 Genere
+----------------  --------------------  -------------------------------------  ----------
+14/07/2006 18:10  Rai Uno               La signora in giallo                   Serial
+14/07/2006 19:05  Rai Uno               Il commissario Rex                     Serial
+14/07/2006 20:00  Rai Uno               Tg1                                    Notizie
+14/07/2006 20:30  Rai Uno               Cotti e mangiati                       Serial
+14/07/2006 18:50  Rai Due               Le cose che amo di te                  Serial
+14/07/2006 19:20  Rai Due               Due uomini e mezzo                     Serial
+14/07/2006 19:45  Rai Due               Warner Show                            Bambini
+14/07/2006 20:10  Rai Due               Braccio di Ferro                       Bambini
+14/07/2006 20:30  Rai Due               Tg2 Sera                               Notizie
+14/07/2006 19:00  Rai Tre               Tg3 - Regionale - Meteo - Tg Sport     Notizie
+14/07/2006 20:05  Rai Tre               Blob                                   Varietà
+14/07/2006 20:15  Rai Tre               Un posto al sole                       Serial
+14/07/2006 20:50  Rai Tre               Atletica leggera                       Sport
+14/07/2006 18:55  Rete 4                Tg4                                    Notizie
+14/07/2006 19:35  Rete 4                Vita da strega                         Serial
+14/07/2006 20:10  Rete 4                Commissariato Saint Martin             Serial
+14/07/2006 19:00  Canale 5              Distretto di Polizia                   Serial
+14/07/2006 20:00  Canale 5              Tg5 Sera                               Notizie
+14/07/2006 20:30  Canale 5              Cultura moderna                        Varietà
+14/07/2006 19:00  Italia 1              3 minuti con Media shopping            Varietà
+14/07/2006 19:05  Italia 1              Dharma&amp;Greg                        Serial
+14/07/2006 20:00  Italia 1              Doppia coppia                          Serial
+14/07/2006 20:30  Italia 1              Rtv Prime Time - La tivù della realtà  Varietà
+14/07/2006 19:00  La 7                  Star Trek Voyager                      Serial
+14/07/2006 20:00  La 7                  Tg La7                                 Notizie
+14/07/2006 20:30  La 7                  In breve                               Attualità
+14/07/2006 20:35  La 7                  Le interviste Barbariche               Talk Show
+14/07/2006 19:00  MTV                   Flash                                  Notizie
+14/07/2006 19:05  MTV                   TRL Tour - Bari                        Varietà
+14/07/2006 20:00  MTV                   Flash                                  Notizie
+14/07/2006 20:05  MTV                   Switch Trip                            Varietà
+14/07/2006 19:00  All Music             TV Diari                               Varietà
+14/07/2006 20:00  All Music             Rotazione musicale                     Musicale

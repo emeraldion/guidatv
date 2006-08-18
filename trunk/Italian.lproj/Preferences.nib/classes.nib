@@ -1,0 +1,30 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeAutoReload = id; 
+                changeAutoUpdate = id; 
+                changeDelay = id; 
+                changeSource = id; 
+            }; 
+            CLASS = PreferencesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                autoReload = id; 
+                autoUpdate = id; 
+                delayLabel = id; 
+                delaySlider = id; 
+                sourceMatrix = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = ServantSlider; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {master = NSButton; }; 
+            SUPERCLASS = NSSlider; 
+        }
+    ); 
+    IBVersion = 1; 
+}

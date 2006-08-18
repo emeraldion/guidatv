@@ -1,0 +1,84 @@
+/* Stili per i contenuti */
+.firstNode
+{
+	background-color: #57a;
+	min-height: 4px;
+}
+
+.lastNode
+{
+	background-color: #57a;
+	min-height: 29px;
+}
+
+.program
+{
+	position: static;
+	background-color: #57a;
+	color: #fff;
+	padding: 2px 4px 4px 4px;
+	text-shadow: 0 1px 1px #666;
+}
+
+br { }
+
+.datario
+{
+	float: left;
+	font-size: 10px;
+}
+
+.titolo
+{
+	margin-left: 33px;
+	min-height: 24px;
+	font-size: 12px;
+	padding-right: 27px;
+}
+
+.genere
+{
+	float: right;
+	font-size: 10px;
+}
+
+.canale
+{
+	float: left;
+	margin-right: 8px;
+	font-size: 14px;
+}
+
+.odd { background-color: #469; }
+.even { background-color: #57a; }
+
+.onair
+{
+	background-image: url("img/onair.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.description { padding-top: 6px; }
+
+.description td
+{
+	font-size: 10px;
+	color: #fff !important;
+	text-shadow: 0 1px 1px #666;
+}
+
+.description br { line-height: 1.5; }
+
+.description img
+{
+	max-width: 50px;
+	max-height: 50px;
+	margin: 4px 4px 4px 0;
+}
+
+.program .throbber
+{
+	width: 20px;
+	margin: 4px 4px 4px 0;
+}
