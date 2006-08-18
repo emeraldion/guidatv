@@ -115,6 +115,7 @@
 		2B3175970A95C70B009E38F1 /* CURLHandle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
 		2B3176BB0A95D554009E38F1 /* Add iCal reminder.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2B3176B90A95D554009E38F1 /* Add iCal reminder.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2B3176BC0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2B3176BA0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
+		2B3177CF0A95DB5C009E38F1 /* onair.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3177CE0A95DB5C009E38F1 /* onair.tiff */; };
 		2B418F620A4C9E640065009C /* About.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2B418F600A4C9E640065009C /* About.nib */; };
 		2B716D4F0A924D9800CC708D /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716D4D0A924D9800CC708D /* MainMenu.nib */; };
 		2B716EEA0A92697400CC708D /* Version in Resources */ = {isa = PBXBuildFile; fileRef = 2B716EE40A92697400CC708D /* Version */; };
@@ -302,6 +303,7 @@
 		2B31749F0A95C6AA009E38F1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = build/Sparkle.framework; sourceTree = "<group>"; };
 		2B3176B90A95D554009E38F1 /* Add iCal reminder.applescript */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.applescript; name = "Add iCal reminder.applescript"; path = "Scripts/Add iCal reminder.applescript"; sourceTree = "<group>"; };
 		2B3176BA0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.applescript; name = "Aggiungi promemoria iCal.applescript"; path = "Scripts/Aggiungi promemoria iCal.applescript"; sourceTree = "<group>"; };
+		2B3177CE0A95DB5C009E38F1 /* onair.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = onair.tiff; path = Images/onair.tiff; sourceTree = "<group>"; };
 		2B418F610A4C9E640065009C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/About.nib; sourceTree = "<group>"; };
 		2B6ACBB80A8F72840066D84F /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/TVProgramDocument.nib; sourceTree = "<group>"; };
 		2B716D4E0A924D9800CC708D /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
@@ -530,6 +532,7 @@
 			children = (
 				2B31743A0A95C441009E38F1 /* Action_Pressed.tiff */,
 				2B31743B0A95C441009E38F1 /* Action.tiff */,
+				2B3177CE0A95DB5C009E38F1 /* onair.tiff */,
 				2B31743C0A95C441009E38F1 /* FooterSpacer.tiff */,
 				2B31743D0A95C441009E38F1 /* SearchBar.tif */,
 				2B31743E0A95C441009E38F1 /* SmartFolderLarge.tiff */,
@@ -780,6 +783,7 @@
 				2B3174680A95C49C009E38F1 /* icon_mastercard.gif in Resources */,
 				2B3174690A95C49C009E38F1 /* icon_visa.gif in Resources */,
 				2B31746A0A95C49C009E38F1 /* paypal.gif in Resources */,
+				2B3177CF0A95DB5C009E38F1 /* onair.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
