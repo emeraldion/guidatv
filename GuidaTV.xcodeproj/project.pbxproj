@@ -1,0 +1,1068 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAppleScriptBuildPhase section */
+		2B79552A0A43065100EBB75E /* AppleScript */ = {
+			isa = PBXAppleScriptBuildPhase;
+			buildActionMask = 2147483647;
+			contextName = "";
+			files = (
+				2B3176BB0A95D554009E38F1 /* Add iCal reminder.applescript in AppleScript */,
+				2B3176BC0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript in AppleScript */,
+			);
+			isSharedContext = 0;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXAppleScriptBuildPhase section */
+
+/* Begin PBXBuildFile section */
+		2B3173E20A95C2EA009E38F1 /* satellite-small.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173DE0A95C2EA009E38F1 /* satellite-small.tif */; };
+		2B3173E30A95C2EA009E38F1 /* satellite.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173DF0A95C2EA009E38F1 /* satellite.tif */; };
+		2B3173E40A95C2EA009E38F1 /* terrestrial-small.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173E00A95C2EA009E38F1 /* terrestrial-small.tif */; };
+		2B3173E50A95C2EA009E38F1 /* terrestrial.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173E10A95C2EA009E38F1 /* terrestrial.tif */; };
+		2B3174030A95C30A009E38F1 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173E60A95C30A009E38F1 /* 1.png */; };
+		2B3174040A95C30A009E38F1 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173E70A95C30A009E38F1 /* 3.png */; };
+		2B3174050A95C30A009E38F1 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173E80A95C30A009E38F1 /* 16.png */; };
+		2B3174060A95C30A009E38F1 /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173E90A95C30A009E38F1 /* 22.png */; };
+		2B3174070A95C30A009E38F1 /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173EA0A95C30A009E38F1 /* 23.png */; };
+		2B3174080A95C30A009E38F1 /* 24.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173EB0A95C30A009E38F1 /* 24.png */; };
+		2B3174090A95C30A009E38F1 /* 33.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173EC0A95C30A009E38F1 /* 33.png */; };
+		2B31740A0A95C30A009E38F1 /* 35.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173ED0A95C30A009E38F1 /* 35.png */; };
+		2B31740B0A95C30A009E38F1 /* 41.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173EE0A95C30A009E38F1 /* 41.png */; };
+		2B31740C0A95C30A009E38F1 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173EF0A95C30A009E38F1 /* 57.png */; };
+		2B31740D0A95C30A009E38F1 /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F00A95C30A009E38F1 /* 60.png */; };
+		2B31740E0A95C30A009E38F1 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F10A95C30A009E38F1 /* 72.png */; };
+		2B31740F0A95C30A009E38F1 /* 73.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F20A95C30A009E38F1 /* 73.png */; };
+		2B3174100A95C30A009E38F1 /* 75.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F30A95C30A009E38F1 /* 75.png */; };
+		2B3174110A95C30A009E38F1 /* 104.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F40A95C30A009E38F1 /* 104.png */; };
+		2B3174120A95C30A009E38F1 /* 105.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F50A95C30A009E38F1 /* 105.png */; };
+		2B3174130A95C30A009E38F1 /* 106.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F60A95C30A009E38F1 /* 106.png */; };
+		2B3174140A95C30A009E38F1 /* 107.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F70A95C30A009E38F1 /* 107.png */; };
+		2B3174150A95C30A009E38F1 /* 110.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F80A95C30A009E38F1 /* 110.png */; };
+		2B3174160A95C30A009E38F1 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173F90A95C30A009E38F1 /* 111.png */; };
+		2B3174170A95C30A009E38F1 /* 112.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173FA0A95C30A009E38F1 /* 112.png */; };
+		2B3174180A95C30A009E38F1 /* 113.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173FB0A95C30A009E38F1 /* 113.png */; };
+		2B3174190A95C30A009E38F1 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173FC0A95C30A009E38F1 /* 114.png */; };
+		2B31741A0A95C30A009E38F1 /* 115.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173FD0A95C30A009E38F1 /* 115.png */; };
+		2B31741B0A95C30B009E38F1 /* 116.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173FE0A95C30A009E38F1 /* 116.png */; };
+		2B31741C0A95C30B009E38F1 /* 117.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173FF0A95C30A009E38F1 /* 117.png */; };
+		2B31741D0A95C30B009E38F1 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174000A95C30A009E38F1 /* 123.png */; };
+		2B31741E0A95C30B009E38F1 /* 124.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174010A95C30A009E38F1 /* 124.png */; };
+		2B31741F0A95C30B009E38F1 /* 125.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174020A95C30A009E38F1 /* 125.png */; };
+		2B3174210A95C349009E38F1 /* iCal.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174200A95C349009E38F1 /* iCal.tif */; };
+		2B31742B0A95C3A3009E38F1 /* drawer.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174220A95C3A3009E38F1 /* drawer.tiff */; };
+		2B31742C0A95C3A3009E38F1 /* icaltoolbar.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174230A95C3A3009E38F1 /* icaltoolbar.tif */; };
+		2B31742D0A95C3A3009E38F1 /* inspectorButton.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174240A95C3A3009E38F1 /* inspectorButton.tiff */; };
+		2B31742E0A95C3A3009E38F1 /* popcorntub.psd in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174250A95C3A3009E38F1 /* popcorntub.psd */; };
+		2B31742F0A95C3A4009E38F1 /* popcorntub.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174260A95C3A3009E38F1 /* popcorntub.tif */; };
+		2B3174300A95C3A4009E38F1 /* primaserata.psd in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174270A95C3A3009E38F1 /* primaserata.psd */; };
+		2B3174310A95C3A4009E38F1 /* primaserata.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174280A95C3A3009E38F1 /* primaserata.tif */; };
+		2B3174320A95C3A4009E38F1 /* reload.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174290A95C3A3009E38F1 /* reload.tiff */; };
+		2B3174330A95C3A4009E38F1 /* search.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B31742A0A95C3A3009E38F1 /* search.tif */; };
+		2B3174370A95C3FC009E38F1 /* GuidaTV.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174340A95C3FC009E38F1 /* GuidaTV.icns */; };
+		2B3174380A95C3FD009E38F1 /* tvguide.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174350A95C3FC009E38F1 /* tvguide.icns */; };
+		2B3174390A95C3FD009E38F1 /* tvprogram.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174360A95C3FC009E38F1 /* tvprogram.icns */; };
+		2B3174410A95C441009E38F1 /* Action_Pressed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B31743A0A95C441009E38F1 /* Action_Pressed.tiff */; };
+		2B3174420A95C441009E38F1 /* Action.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B31743B0A95C441009E38F1 /* Action.tiff */; };
+		2B3174430A95C441009E38F1 /* FooterSpacer.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B31743C0A95C441009E38F1 /* FooterSpacer.tiff */; };
+		2B3174440A95C441009E38F1 /* SearchBar.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B31743D0A95C441009E38F1 /* SearchBar.tif */; };
+		2B3174450A95C441009E38F1 /* SmartFolderLarge.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B31743E0A95C441009E38F1 /* SmartFolderLarge.tiff */; };
+		2B3174460A95C441009E38F1 /* SmartFolderSmall.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B31743F0A95C441009E38F1 /* SmartFolderSmall.tiff */; };
+		2B3174470A95C441009E38F1 /* SplitterHandle.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174400A95C441009E38F1 /* SplitterHandle.tiff */; };
+		2B31745C0A95C46C009E38F1 /* GuidaTV-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B31745B0A95C46C009E38F1 /* GuidaTV-on.png */; };
+		2B3174640A95C49C009E38F1 /* amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B31745D0A95C49C009E38F1 /* amazon.png */; };
+		2B3174650A95C49C009E38F1 /* icon_amex.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B31745E0A95C49C009E38F1 /* icon_amex.gif */; };
+		2B3174660A95C49C009E38F1 /* icon_discover.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B31745F0A95C49C009E38F1 /* icon_discover.gif */; };
+		2B3174670A95C49C009E38F1 /* icon_echeck.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174600A95C49C009E38F1 /* icon_echeck.gif */; };
+		2B3174680A95C49C009E38F1 /* icon_mastercard.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174610A95C49C009E38F1 /* icon_mastercard.gif */; };
+		2B3174690A95C49C009E38F1 /* icon_visa.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174620A95C49C009E38F1 /* icon_visa.gif */; };
+		2B31746A0A95C49C009E38F1 /* paypal.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3174630A95C49C009E38F1 /* paypal.gif */; };
+		2B3174720A95C536009E38F1 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173B80A95C283009E38F1 /* AboutController.m */; };
+		2B3174730A95C536009E38F1 /* HyperLinkTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173BB0A95C283009E38F1 /* HyperLinkTextField.m */; };
+		2B3174740A95C536009E38F1 /* IMDBClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173BD0A95C283009E38F1 /* IMDBClient.m */; };
+		2B3174750A95C536009E38F1 /* MyPathTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173C00A95C283009E38F1 /* MyPathTransformer.m */; };
+		2B3174760A95C536009E38F1 /* NSArray+TVUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173C20A95C283009E38F1 /* NSArray+TVUtils.m */; };
+		2B3174770A95C536009E38F1 /* NSString+SFHFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173C40A95C283009E38F1 /* NSString+SFHFUtils.m */; };
+		2B3174780A95C536009E38F1 /* NSString+TVUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173C60A95C283009E38F1 /* NSString+TVUtils.m */; };
+		2B3174790A95C55F009E38F1 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173C80A95C283009E38F1 /* PreferencesController.m */; };
+		2B31747A0A95C55F009E38F1 /* ProgramArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173CA0A95C283009E38F1 /* ProgramArrayController.m */; };
+		2B31747B0A95C55F009E38F1 /* ProgramsPrintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173CC0A95C283009E38F1 /* ProgramsPrintView.m */; };
+		2B31747C0A95C55F009E38F1 /* ThinSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173CE0A95C283009E38F1 /* ThinSplitView.m */; };
+		2B31747D0A95C55F009E38F1 /* ThinSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173D00A95C283009E38F1 /* ThinSplitViewDelegate.m */; };
+		2B31747E0A95C55F009E38F1 /* TimeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173D20A95C283009E38F1 /* TimeTransformer.m */; };
+		2B31747F0A95C55F009E38F1 /* TVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173D50A95C283009E38F1 /* TVController.m */; };
+		2B3174800A95C55F009E38F1 /* TVGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173D70A95C283009E38F1 /* TVGuide.m */; };
+		2B3174810A95C55F009E38F1 /* TVProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173D90A95C283009E38F1 /* TVProgram.m */; };
+		2B3174820A95C55F009E38F1 /* TVProgramDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173DB0A95C283009E38F1 /* TVProgramDocument.m */; };
+		2B3174830A95C55F009E38F1 /* TVTuner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173DD0A95C283009E38F1 /* TVTuner.m */; };
+		2B3174840A95C568009E38F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173BE0A95C283009E38F1 /* main.m */; };
+		2B3174A00A95C6AA009E38F1 /* AGRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31749B0A95C6AA009E38F1 /* AGRegex.framework */; };
+		2B3174A10A95C6AA009E38F1 /* AMRolloverButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31749C0A95C6AA009E38F1 /* AMRolloverButton.framework */; };
+		2B3174A20A95C6AA009E38F1 /* CURLHandle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
+		2B3174A30A95C6AA009E38F1 /* RBSplitView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31749E0A95C6AA009E38F1 /* RBSplitView.framework */; };
+		2B3174A40A95C6AA009E38F1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31749F0A95C6AA009E38F1 /* Sparkle.framework */; };
+		2B31758D0A95C6E2009E38F1 /* AGRegex.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749B0A95C6AA009E38F1 /* AGRegex.framework */; };
+		2B31758E0A95C6E2009E38F1 /* AMRolloverButton.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749C0A95C6AA009E38F1 /* AMRolloverButton.framework */; };
+		2B31758F0A95C6E3009E38F1 /* CURLHandle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
+		2B3175900A95C6E3009E38F1 /* RBSplitView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749E0A95C6AA009E38F1 /* RBSplitView.framework */; };
+		2B3175910A95C6E3009E38F1 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749F0A95C6AA009E38F1 /* Sparkle.framework */; };
+		2B3175940A95C700009E38F1 /* CURLHandle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
+		2B3175970A95C70B009E38F1 /* CURLHandle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
+		2B3176BB0A95D554009E38F1 /* Add iCal reminder.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2B3176B90A95D554009E38F1 /* Add iCal reminder.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
+		2B3176BC0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2B3176BA0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
+		2B418F620A4C9E640065009C /* About.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2B418F600A4C9E640065009C /* About.nib */; };
+		2B716D4F0A924D9800CC708D /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716D4D0A924D9800CC708D /* MainMenu.nib */; };
+		2B716EEA0A92697400CC708D /* Version in Resources */ = {isa = PBXBuildFile; fileRef = 2B716EE40A92697400CC708D /* Version */; };
+		2B716EEB0A92697400CC708D /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B716EE50A92697400CC708D /* version.plist */; };
+		2B716FAD0A9269C900CC708D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B716EF10A9269BE00CC708D /* CoreFoundation.framework */; };
+		2B716FAE0A9269C900CC708D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B716EF20A9269BE00CC708D /* CoreServices.framework */; };
+		2B716FB30A926A1D00CC708D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Info.plist */; };
+		2B716FB40A926A4000CC708D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B716EE10A92697400CC708D /* Info.plist */; };
+		2B716FB50A926A4000CC708D /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B716EE30A92697400CC708D /* schema.xml */; };
+		2B716FB60A926A7B00CC708D /* Version in Resources */ = {isa = PBXBuildFile; fileRef = 2B716EE40A92697400CC708D /* Version */; };
+		2B716FB70A926A7B00CC708D /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B716EE50A92697400CC708D /* version.plist */; };
+		2B716FC20A926ADD00CC708D /* GuidaTV.mdimporter in Copy MDImporter */ = {isa = PBXBuildFile; fileRef = 2B716EB30A92682C00CC708D /* GuidaTV.mdimporter */; };
+		2B7170210A926E1000CC708D /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716EE00A92697400CC708D /* GetMetadataForFile.m */; };
+		2B7170220A926E1000CC708D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B716EE20A92697400CC708D /* main.c */; };
+		2B7171220A92774B00CC708D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		2B7359060A441D4500799D62 /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2B7359040A441D4500799D62 /* Preferences.nib */; };
+		2B7954230A42EDFB00EBB75E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B7954210A42EDFB00EBB75E /* Localizable.strings */; };
+		2BB50A800A39854B00BA7F59 /* Genres.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BB50A7F0A39854B00BA7F59 /* Genres.plist */; };
+		2BB50AD20A39872C00BA7F59 /* Channels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BB50AD10A39872C00BA7F59 /* Channels.plist */; };
+		2BB716070A3DBA35000BB181 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB716060A3DBA35000BB181 /* AppleScriptKit.framework */; };
+		2BB717040A3DE737000BB181 /* AppleScriptKit.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2BB717030A3DE737000BB181 /* AppleScriptKit.sdef */; };
+		2BCE836A0A8F6DF20027CBB4 /* TVProgramDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE83690A8F6DF20027CBB4 /* TVProgramDocument.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B716EEF0A92698B00CC708D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B716EB20A92682C00CC708D;
+			remoteInfo = MetadataImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B716FE30A926B1F00CC708D /* Copy MDImporter */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/Spotlight;
+			dstSubfolderSpec = 1;
+			files = (
+				2B716FC20A926ADD00CC708D /* GuidaTV.mdimporter in Copy MDImporter */,
+			);
+			name = "Copy MDImporter";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B7171B30A9283FE00CC708D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B3175970A95C70B009E38F1 /* CURLHandle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB50C5C0A39943F00BA7F59 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B31758D0A95C6E2009E38F1 /* AGRegex.framework in CopyFiles */,
+				2B31758E0A95C6E2009E38F1 /* AMRolloverButton.framework in CopyFiles */,
+				2B31758F0A95C6E3009E38F1 /* CURLHandle.framework in CopyFiles */,
+				2B3175900A95C6E3009E38F1 /* RBSplitView.framework in CopyFiles */,
+				2B3175910A95C6E3009E38F1 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2B3173B70A95C283009E38F1 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AboutController.h; path = Sources/AboutController.h; sourceTree = "<group>"; };
+		2B3173B80A95C283009E38F1 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AboutController.m; path = Sources/AboutController.m; sourceTree = "<group>"; };
+		2B3173B90A95C283009E38F1 /* GuidaTV_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GuidaTV_Prefix.pch; path = Sources/GuidaTV_Prefix.pch; sourceTree = "<group>"; };
+		2B3173BA0A95C283009E38F1 /* HyperLinkTextField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HyperLinkTextField.h; path = Sources/HyperLinkTextField.h; sourceTree = "<group>"; };
+		2B3173BB0A95C283009E38F1 /* HyperLinkTextField.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = HyperLinkTextField.m; path = Sources/HyperLinkTextField.m; sourceTree = "<group>"; };
+		2B3173BC0A95C283009E38F1 /* IMDBClient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = IMDBClient.h; path = Sources/IMDBClient.h; sourceTree = "<group>"; };
+		2B3173BD0A95C283009E38F1 /* IMDBClient.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = IMDBClient.m; path = Sources/IMDBClient.m; sourceTree = "<group>"; };
+		2B3173BE0A95C283009E38F1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/main.m; sourceTree = "<group>"; };
+		2B3173BF0A95C283009E38F1 /* MyPathTransformer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyPathTransformer.h; path = Sources/MyPathTransformer.h; sourceTree = "<group>"; };
+		2B3173C00A95C283009E38F1 /* MyPathTransformer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyPathTransformer.m; path = Sources/MyPathTransformer.m; sourceTree = "<group>"; };
+		2B3173C10A95C283009E38F1 /* NSArray+TVUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSArray+TVUtils.h"; path = "Sources/NSArray+TVUtils.h"; sourceTree = "<group>"; };
+		2B3173C20A95C283009E38F1 /* NSArray+TVUtils.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSArray+TVUtils.m"; path = "Sources/NSArray+TVUtils.m"; sourceTree = "<group>"; };
+		2B3173C30A95C283009E38F1 /* NSString+SFHFUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSString+SFHFUtils.h"; path = "Sources/NSString+SFHFUtils.h"; sourceTree = "<group>"; };
+		2B3173C40A95C283009E38F1 /* NSString+SFHFUtils.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSString+SFHFUtils.m"; path = "Sources/NSString+SFHFUtils.m"; sourceTree = "<group>"; };
+		2B3173C50A95C283009E38F1 /* NSString+TVUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSString+TVUtils.h"; path = "Sources/NSString+TVUtils.h"; sourceTree = "<group>"; };
+		2B3173C60A95C283009E38F1 /* NSString+TVUtils.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSString+TVUtils.m"; path = "Sources/NSString+TVUtils.m"; sourceTree = "<group>"; };
+		2B3173C70A95C283009E38F1 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PreferencesController.h; path = Sources/PreferencesController.h; sourceTree = "<group>"; };
+		2B3173C80A95C283009E38F1 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = PreferencesController.m; path = Sources/PreferencesController.m; sourceTree = "<group>"; };
+		2B3173C90A95C283009E38F1 /* ProgramArrayController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ProgramArrayController.h; path = Sources/ProgramArrayController.h; sourceTree = "<group>"; };
+		2B3173CA0A95C283009E38F1 /* ProgramArrayController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ProgramArrayController.m; path = Sources/ProgramArrayController.m; sourceTree = "<group>"; };
+		2B3173CB0A95C283009E38F1 /* ProgramsPrintView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ProgramsPrintView.h; path = Sources/ProgramsPrintView.h; sourceTree = "<group>"; };
+		2B3173CC0A95C283009E38F1 /* ProgramsPrintView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ProgramsPrintView.m; path = Sources/ProgramsPrintView.m; sourceTree = "<group>"; };
+		2B3173CD0A95C283009E38F1 /* ThinSplitView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ThinSplitView.h; path = Sources/ThinSplitView.h; sourceTree = "<group>"; };
+		2B3173CE0A95C283009E38F1 /* ThinSplitView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ThinSplitView.m; path = Sources/ThinSplitView.m; sourceTree = "<group>"; };
+		2B3173CF0A95C283009E38F1 /* ThinSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ThinSplitViewDelegate.h; path = Sources/ThinSplitViewDelegate.h; sourceTree = "<group>"; };
+		2B3173D00A95C283009E38F1 /* ThinSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ThinSplitViewDelegate.m; path = Sources/ThinSplitViewDelegate.m; sourceTree = "<group>"; };
+		2B3173D10A95C283009E38F1 /* TimeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TimeTransformer.h; path = Sources/TimeTransformer.h; sourceTree = "<group>"; };
+		2B3173D20A95C283009E38F1 /* TimeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TimeTransformer.m; path = Sources/TimeTransformer.m; sourceTree = "<group>"; };
+		2B3173D30A95C283009E38F1 /* TVConsumer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TVConsumer.h; path = Sources/TVConsumer.h; sourceTree = "<group>"; };
+		2B3173D40A95C283009E38F1 /* TVController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TVController.h; path = Sources/TVController.h; sourceTree = "<group>"; };
+		2B3173D50A95C283009E38F1 /* TVController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TVController.m; path = Sources/TVController.m; sourceTree = "<group>"; };
+		2B3173D60A95C283009E38F1 /* TVGuide.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TVGuide.h; path = Sources/TVGuide.h; sourceTree = "<group>"; };
+		2B3173D70A95C283009E38F1 /* TVGuide.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TVGuide.m; path = Sources/TVGuide.m; sourceTree = "<group>"; };
+		2B3173D80A95C283009E38F1 /* TVProgram.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TVProgram.h; path = Sources/TVProgram.h; sourceTree = "<group>"; };
+		2B3173D90A95C283009E38F1 /* TVProgram.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TVProgram.m; path = Sources/TVProgram.m; sourceTree = "<group>"; };
+		2B3173DA0A95C283009E38F1 /* TVProgramDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TVProgramDocument.h; path = Sources/TVProgramDocument.h; sourceTree = "<group>"; };
+		2B3173DB0A95C283009E38F1 /* TVProgramDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TVProgramDocument.m; path = Sources/TVProgramDocument.m; sourceTree = "<group>"; };
+		2B3173DC0A95C283009E38F1 /* TVTuner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TVTuner.h; path = Sources/TVTuner.h; sourceTree = "<group>"; };
+		2B3173DD0A95C283009E38F1 /* TVTuner.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TVTuner.m; path = Sources/TVTuner.m; sourceTree = "<group>"; };
+		2B3173DE0A95C2EA009E38F1 /* satellite-small.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "satellite-small.tif"; path = "Images/satellite-small.tif"; sourceTree = "<group>"; };
+		2B3173DF0A95C2EA009E38F1 /* satellite.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = satellite.tif; path = Images/satellite.tif; sourceTree = "<group>"; };
+		2B3173E00A95C2EA009E38F1 /* terrestrial-small.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "terrestrial-small.tif"; path = "Images/terrestrial-small.tif"; sourceTree = "<group>"; };
+		2B3173E10A95C2EA009E38F1 /* terrestrial.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = terrestrial.tif; path = Images/terrestrial.tif; sourceTree = "<group>"; };
+		2B3173E60A95C30A009E38F1 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = "Images/Channel Icons/1.png"; sourceTree = "<group>"; };
+		2B3173E70A95C30A009E38F1 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = "Images/Channel Icons/3.png"; sourceTree = "<group>"; };
+		2B3173E80A95C30A009E38F1 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 16.png; path = "Images/Channel Icons/16.png"; sourceTree = "<group>"; };
+		2B3173E90A95C30A009E38F1 /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 22.png; path = "Images/Channel Icons/22.png"; sourceTree = "<group>"; };
+		2B3173EA0A95C30A009E38F1 /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 23.png; path = "Images/Channel Icons/23.png"; sourceTree = "<group>"; };
+		2B3173EB0A95C30A009E38F1 /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 24.png; path = "Images/Channel Icons/24.png"; sourceTree = "<group>"; };
+		2B3173EC0A95C30A009E38F1 /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 33.png; path = "Images/Channel Icons/33.png"; sourceTree = "<group>"; };
+		2B3173ED0A95C30A009E38F1 /* 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 35.png; path = "Images/Channel Icons/35.png"; sourceTree = "<group>"; };
+		2B3173EE0A95C30A009E38F1 /* 41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 41.png; path = "Images/Channel Icons/41.png"; sourceTree = "<group>"; };
+		2B3173EF0A95C30A009E38F1 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 57.png; path = "Images/Channel Icons/57.png"; sourceTree = "<group>"; };
+		2B3173F00A95C30A009E38F1 /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 60.png; path = "Images/Channel Icons/60.png"; sourceTree = "<group>"; };
+		2B3173F10A95C30A009E38F1 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 72.png; path = "Images/Channel Icons/72.png"; sourceTree = "<group>"; };
+		2B3173F20A95C30A009E38F1 /* 73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 73.png; path = "Images/Channel Icons/73.png"; sourceTree = "<group>"; };
+		2B3173F30A95C30A009E38F1 /* 75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 75.png; path = "Images/Channel Icons/75.png"; sourceTree = "<group>"; };
+		2B3173F40A95C30A009E38F1 /* 104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 104.png; path = "Images/Channel Icons/104.png"; sourceTree = "<group>"; };
+		2B3173F50A95C30A009E38F1 /* 105.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 105.png; path = "Images/Channel Icons/105.png"; sourceTree = "<group>"; };
+		2B3173F60A95C30A009E38F1 /* 106.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 106.png; path = "Images/Channel Icons/106.png"; sourceTree = "<group>"; };
+		2B3173F70A95C30A009E38F1 /* 107.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 107.png; path = "Images/Channel Icons/107.png"; sourceTree = "<group>"; };
+		2B3173F80A95C30A009E38F1 /* 110.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 110.png; path = "Images/Channel Icons/110.png"; sourceTree = "<group>"; };
+		2B3173F90A95C30A009E38F1 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 111.png; path = "Images/Channel Icons/111.png"; sourceTree = "<group>"; };
+		2B3173FA0A95C30A009E38F1 /* 112.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 112.png; path = "Images/Channel Icons/112.png"; sourceTree = "<group>"; };
+		2B3173FB0A95C30A009E38F1 /* 113.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 113.png; path = "Images/Channel Icons/113.png"; sourceTree = "<group>"; };
+		2B3173FC0A95C30A009E38F1 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 114.png; path = "Images/Channel Icons/114.png"; sourceTree = "<group>"; };
+		2B3173FD0A95C30A009E38F1 /* 115.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 115.png; path = "Images/Channel Icons/115.png"; sourceTree = "<group>"; };
+		2B3173FE0A95C30A009E38F1 /* 116.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 116.png; path = "Images/Channel Icons/116.png"; sourceTree = "<group>"; };
+		2B3173FF0A95C30A009E38F1 /* 117.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 117.png; path = "Images/Channel Icons/117.png"; sourceTree = "<group>"; };
+		2B3174000A95C30A009E38F1 /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 123.png; path = "Images/Channel Icons/123.png"; sourceTree = "<group>"; };
+		2B3174010A95C30A009E38F1 /* 124.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 124.png; path = "Images/Channel Icons/124.png"; sourceTree = "<group>"; };
+		2B3174020A95C30A009E38F1 /* 125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 125.png; path = "Images/Channel Icons/125.png"; sourceTree = "<group>"; };
+		2B3174200A95C349009E38F1 /* iCal.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = iCal.tif; path = Images/iCal.tif; sourceTree = "<group>"; };
+		2B3174220A95C3A3009E38F1 /* drawer.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = drawer.tiff; path = "Images/Toolbar Icons/drawer.tiff"; sourceTree = "<group>"; };
+		2B3174230A95C3A3009E38F1 /* icaltoolbar.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = icaltoolbar.tif; path = "Images/Toolbar Icons/icaltoolbar.tif"; sourceTree = "<group>"; };
+		2B3174240A95C3A3009E38F1 /* inspectorButton.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = inspectorButton.tiff; path = "Images/Toolbar Icons/inspectorButton.tiff"; sourceTree = "<group>"; };
+		2B3174250A95C3A3009E38F1 /* popcorntub.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = popcorntub.psd; path = "Images/Toolbar Icons/popcorntub.psd"; sourceTree = "<group>"; };
+		2B3174260A95C3A3009E38F1 /* popcorntub.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = popcorntub.tif; path = "Images/Toolbar Icons/popcorntub.tif"; sourceTree = "<group>"; };
+		2B3174270A95C3A3009E38F1 /* primaserata.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = primaserata.psd; path = "Images/Toolbar Icons/primaserata.psd"; sourceTree = "<group>"; };
+		2B3174280A95C3A3009E38F1 /* primaserata.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = primaserata.tif; path = "Images/Toolbar Icons/primaserata.tif"; sourceTree = "<group>"; };
+		2B3174290A95C3A3009E38F1 /* reload.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = reload.tiff; path = "Images/Toolbar Icons/reload.tiff"; sourceTree = "<group>"; };
+		2B31742A0A95C3A3009E38F1 /* search.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = search.tif; path = "Images/Toolbar Icons/search.tif"; sourceTree = "<group>"; };
+		2B3174340A95C3FC009E38F1 /* GuidaTV.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = GuidaTV.icns; path = Icons/GuidaTV.icns; sourceTree = "<group>"; };
+		2B3174350A95C3FC009E38F1 /* tvguide.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = tvguide.icns; path = Icons/tvguide.icns; sourceTree = "<group>"; };
+		2B3174360A95C3FC009E38F1 /* tvprogram.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = tvprogram.icns; path = Icons/tvprogram.icns; sourceTree = "<group>"; };
+		2B31743A0A95C441009E38F1 /* Action_Pressed.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Action_Pressed.tiff; path = Images/Action_Pressed.tiff; sourceTree = "<group>"; };
+		2B31743B0A95C441009E38F1 /* Action.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Action.tiff; path = Images/Action.tiff; sourceTree = "<group>"; };
+		2B31743C0A95C441009E38F1 /* FooterSpacer.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = FooterSpacer.tiff; path = Images/FooterSpacer.tiff; sourceTree = "<group>"; };
+		2B31743D0A95C441009E38F1 /* SearchBar.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = SearchBar.tif; path = Images/SearchBar.tif; sourceTree = "<group>"; };
+		2B31743E0A95C441009E38F1 /* SmartFolderLarge.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = SmartFolderLarge.tiff; path = Images/SmartFolderLarge.tiff; sourceTree = "<group>"; };
+		2B31743F0A95C441009E38F1 /* SmartFolderSmall.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = SmartFolderSmall.tiff; path = Images/SmartFolderSmall.tiff; sourceTree = "<group>"; };
+		2B3174400A95C441009E38F1 /* SplitterHandle.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = SplitterHandle.tiff; path = Images/SplitterHandle.tiff; sourceTree = "<group>"; };
+		2B31745B0A95C46C009E38F1 /* GuidaTV-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GuidaTV-on.png"; path = "Images/GuidaTV-on.png"; sourceTree = "<group>"; };
+		2B31745D0A95C49C009E38F1 /* amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = amazon.png; path = Images/Donation/amazon.png; sourceTree = "<group>"; };
+		2B31745E0A95C49C009E38F1 /* icon_amex.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = icon_amex.gif; path = Images/Donation/icon_amex.gif; sourceTree = "<group>"; };
+		2B31745F0A95C49C009E38F1 /* icon_discover.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = icon_discover.gif; path = Images/Donation/icon_discover.gif; sourceTree = "<group>"; };
+		2B3174600A95C49C009E38F1 /* icon_echeck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = icon_echeck.gif; path = Images/Donation/icon_echeck.gif; sourceTree = "<group>"; };
+		2B3174610A95C49C009E38F1 /* icon_mastercard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = icon_mastercard.gif; path = Images/Donation/icon_mastercard.gif; sourceTree = "<group>"; };
+		2B3174620A95C49C009E38F1 /* icon_visa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = icon_visa.gif; path = Images/Donation/icon_visa.gif; sourceTree = "<group>"; };
+		2B3174630A95C49C009E38F1 /* paypal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = paypal.gif; path = Images/Donation/paypal.gif; sourceTree = "<group>"; };
+		2B31749B0A95C6AA009E38F1 /* AGRegex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGRegex.framework; path = build/AGRegex.framework; sourceTree = "<group>"; };
+		2B31749C0A95C6AA009E38F1 /* AMRolloverButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMRolloverButton.framework; path = build/AMRolloverButton.framework; sourceTree = "<group>"; };
+		2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CURLHandle.framework; path = build/CURLHandle.framework; sourceTree = "<group>"; };
+		2B31749E0A95C6AA009E38F1 /* RBSplitView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RBSplitView.framework; path = build/RBSplitView.framework; sourceTree = "<group>"; };
+		2B31749F0A95C6AA009E38F1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = build/Sparkle.framework; sourceTree = "<group>"; };
+		2B3176B90A95D554009E38F1 /* Add iCal reminder.applescript */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.applescript; name = "Add iCal reminder.applescript"; path = "Scripts/Add iCal reminder.applescript"; sourceTree = "<group>"; };
+		2B3176BA0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.applescript; name = "Aggiungi promemoria iCal.applescript"; path = "Scripts/Aggiungi promemoria iCal.applescript"; sourceTree = "<group>"; };
+		2B418F610A4C9E640065009C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/About.nib; sourceTree = "<group>"; };
+		2B6ACBB80A8F72840066D84F /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/TVProgramDocument.nib; sourceTree = "<group>"; };
+		2B716D4E0A924D9800CC708D /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2B716D530A924DFC00CC708D /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2B716EB30A92682C00CC708D /* GuidaTV.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidaTV.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B716EE00A92697400CC708D /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GetMetadataForFile.m; path = "Metadata Importer/GetMetadataForFile.m"; sourceTree = "<group>"; };
+		2B716EE10A92697400CC708D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = Info.plist; path = "Metadata Importer/Info.plist"; sourceTree = "<group>"; };
+		2B716EE20A92697400CC708D /* main.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = main.c; path = "Metadata Importer/main.c"; sourceTree = "<group>"; };
+		2B716EE30A92697400CC708D /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = schema.xml; path = "Metadata Importer/schema.xml"; sourceTree = "<group>"; };
+		2B716EE40A92697400CC708D /* Version */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = Version; path = "Metadata Importer/Version"; sourceTree = "<group>"; };
+		2B716EE50A92697400CC708D /* version.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = version.plist; path = "Metadata Importer/version.plist"; sourceTree = "<group>"; };
+		2B716EF10A9269BE00CC708D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		2B716EF20A9269BE00CC708D /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		2B7359050A441D4500799D62 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/Preferences.nib; sourceTree = "<group>"; };
+		2B735A1C0A44416D00799D62 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		2B7954220A42EDFB00EBB75E /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2B7954280A42EE3A00EBB75E /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2BB50A7F0A39854B00BA7F59 /* Genres.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Genres.plist; sourceTree = "<group>"; };
+		2BB50AD10A39872C00BA7F59 /* Channels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Channels.plist; sourceTree = "<group>"; };
+		2BB716060A3DBA35000BB181 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
+		2BB717030A3DE737000BB181 /* AppleScriptKit.sdef */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.sdef; name = AppleScriptKit.sdef; path = /System/Library/Frameworks/AppleScriptKit.framework/Versions/A/Resources/AppleScriptKit.sdef; sourceTree = "<absolute>"; };
+		2BCE83070A8F6B6A0027CBB4 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TVProgramDocument.nib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* GuidaTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuidaTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B716EB10A92682C00CC708D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3175940A95C700009E38F1 /* CURLHandle.framework in Frameworks */,
+				2B7171220A92774B00CC708D /* Cocoa.framework in Frameworks */,
+				2B716FAD0A9269C900CC708D /* CoreFoundation.framework in Frameworks */,
+				2B716FAE0A9269C900CC708D /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB716070A3DBA35000BB181 /* AppleScriptKit.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				2B3174A00A95C6AA009E38F1 /* AGRegex.framework in Frameworks */,
+				2B3174A10A95C6AA009E38F1 /* AMRolloverButton.framework in Frameworks */,
+				2B3174A20A95C6AA009E38F1 /* CURLHandle.framework in Frameworks */,
+				2B3174A30A95C6AA009E38F1 /* RBSplitView.framework in Frameworks */,
+				2B3174A40A95C6AA009E38F1 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173B70A95C283009E38F1 /* AboutController.h */,
+				2B3173B80A95C283009E38F1 /* AboutController.m */,
+				2B3173BA0A95C283009E38F1 /* HyperLinkTextField.h */,
+				2B3173BB0A95C283009E38F1 /* HyperLinkTextField.m */,
+				2B3173BC0A95C283009E38F1 /* IMDBClient.h */,
+				2B3173BD0A95C283009E38F1 /* IMDBClient.m */,
+				2B3173BF0A95C283009E38F1 /* MyPathTransformer.h */,
+				2B3173C00A95C283009E38F1 /* MyPathTransformer.m */,
+				2B3173C10A95C283009E38F1 /* NSArray+TVUtils.h */,
+				2B3173C20A95C283009E38F1 /* NSArray+TVUtils.m */,
+				2B3173C30A95C283009E38F1 /* NSString+SFHFUtils.h */,
+				2B3173C40A95C283009E38F1 /* NSString+SFHFUtils.m */,
+				2B3173C50A95C283009E38F1 /* NSString+TVUtils.h */,
+				2B3173C60A95C283009E38F1 /* NSString+TVUtils.m */,
+				2B3173C70A95C283009E38F1 /* PreferencesController.h */,
+				2B3173C80A95C283009E38F1 /* PreferencesController.m */,
+				2B3173C90A95C283009E38F1 /* ProgramArrayController.h */,
+				2B3173CA0A95C283009E38F1 /* ProgramArrayController.m */,
+				2B3173CB0A95C283009E38F1 /* ProgramsPrintView.h */,
+				2B3173CC0A95C283009E38F1 /* ProgramsPrintView.m */,
+				2B3173CD0A95C283009E38F1 /* ThinSplitView.h */,
+				2B3173CE0A95C283009E38F1 /* ThinSplitView.m */,
+				2B3173CF0A95C283009E38F1 /* ThinSplitViewDelegate.h */,
+				2B3173D00A95C283009E38F1 /* ThinSplitViewDelegate.m */,
+				2B3173D10A95C283009E38F1 /* TimeTransformer.h */,
+				2B3173D20A95C283009E38F1 /* TimeTransformer.m */,
+				2B3173D40A95C283009E38F1 /* TVController.h */,
+				2B3173D50A95C283009E38F1 /* TVController.m */,
+				2B3173D60A95C283009E38F1 /* TVGuide.h */,
+				2B3173D70A95C283009E38F1 /* TVGuide.m */,
+				2B3173D80A95C283009E38F1 /* TVProgram.h */,
+				2B3173D90A95C283009E38F1 /* TVProgram.m */,
+				2B3173DA0A95C283009E38F1 /* TVProgramDocument.h */,
+				2B3173DB0A95C283009E38F1 /* TVProgramDocument.m */,
+				2B3173DC0A95C283009E38F1 /* TVTuner.h */,
+				2B3173DD0A95C283009E38F1 /* TVTuner.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B31749B0A95C6AA009E38F1 /* AGRegex.framework */,
+				2B31749C0A95C6AA009E38F1 /* AMRolloverButton.framework */,
+				2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */,
+				2B31749E0A95C6AA009E38F1 /* RBSplitView.framework */,
+				2B31749F0A95C6AA009E38F1 /* Sparkle.framework */,
+				2BB716060A3DBA35000BB181 /* AppleScriptKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				2B716EF10A9269BE00CC708D /* CoreFoundation.framework */,
+				2B716EF20A9269BE00CC708D /* CoreServices.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* GuidaTV.app */,
+				2B716EB30A92682C00CC708D /* GuidaTV.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* GuidaTV */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				2B716EEC0A92697900CC708D /* Metadata Importer */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				2BB716640A3DBC68000BB181 /* Scripts */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = GuidaTV;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173B90A95C283009E38F1 /* GuidaTV_Prefix.pch */,
+				2B3173BE0A95C283009E38F1 /* main.m */,
+				2B3173D30A95C283009E38F1 /* TVConsumer.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B716A930A92119900CC708D /* Sources icons */,
+				2B716A940A9211AC00CC708D /* Interface images */,
+				2B6ACF850A8FC8B10066D84F /* File Icons */,
+				2B1955E30A8B3AF500415D23 /* Donation */,
+				2BB510F30A39D85B00BA7F59 /* Toolbar icons */,
+				2B31745B0A95C46C009E38F1 /* GuidaTV-on.png */,
+				2B73914B0A52C04C0017E123 /* Channel icons */,
+				2B3174200A95C349009E38F1 /* iCal.tif */,
+				2B3174340A95C3FC009E38F1 /* GuidaTV.icns */,
+				2BB717030A3DE737000BB181 /* AppleScriptKit.sdef */,
+				2BB50A7F0A39854B00BA7F59 /* Genres.plist */,
+				2BB50AD10A39872C00BA7F59 /* Channels.plist */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				2BFE01F60A93622800246EA1 /* Nib Files */,
+				2B7954210A42EDFB00EBB75E /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B1955E30A8B3AF500415D23 /* Donation */ = {
+			isa = PBXGroup;
+			children = (
+				2B31745D0A95C49C009E38F1 /* amazon.png */,
+				2B31745E0A95C49C009E38F1 /* icon_amex.gif */,
+				2B31745F0A95C49C009E38F1 /* icon_discover.gif */,
+				2B3174600A95C49C009E38F1 /* icon_echeck.gif */,
+				2B3174610A95C49C009E38F1 /* icon_mastercard.gif */,
+				2B3174620A95C49C009E38F1 /* icon_visa.gif */,
+				2B3174630A95C49C009E38F1 /* paypal.gif */,
+			);
+			name = Donation;
+			sourceTree = "<group>";
+		};
+		2B6ACF850A8FC8B10066D84F /* File Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2B3174350A95C3FC009E38F1 /* tvguide.icns */,
+				2B3174360A95C3FC009E38F1 /* tvprogram.icns */,
+			);
+			name = "File Icons";
+			sourceTree = "<group>";
+		};
+		2B716A930A92119900CC708D /* Sources icons */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173DE0A95C2EA009E38F1 /* satellite-small.tif */,
+				2B3173DF0A95C2EA009E38F1 /* satellite.tif */,
+				2B3173E00A95C2EA009E38F1 /* terrestrial-small.tif */,
+				2B3173E10A95C2EA009E38F1 /* terrestrial.tif */,
+			);
+			name = "Sources icons";
+			sourceTree = "<group>";
+		};
+		2B716A940A9211AC00CC708D /* Interface images */ = {
+			isa = PBXGroup;
+			children = (
+				2B31743A0A95C441009E38F1 /* Action_Pressed.tiff */,
+				2B31743B0A95C441009E38F1 /* Action.tiff */,
+				2B31743C0A95C441009E38F1 /* FooterSpacer.tiff */,
+				2B31743D0A95C441009E38F1 /* SearchBar.tif */,
+				2B31743E0A95C441009E38F1 /* SmartFolderLarge.tiff */,
+				2B31743F0A95C441009E38F1 /* SmartFolderSmall.tiff */,
+				2B3174400A95C441009E38F1 /* SplitterHandle.tiff */,
+			);
+			name = "Interface images";
+			sourceTree = "<group>";
+		};
+		2B716EEC0A92697900CC708D /* Metadata Importer */ = {
+			isa = PBXGroup;
+			children = (
+				2B716EE00A92697400CC708D /* GetMetadataForFile.m */,
+				2B716EE10A92697400CC708D /* Info.plist */,
+				2B716EE20A92697400CC708D /* main.c */,
+				2B716EE30A92697400CC708D /* schema.xml */,
+				2B716EE40A92697400CC708D /* Version */,
+				2B716EE50A92697400CC708D /* version.plist */,
+			);
+			name = "Metadata Importer";
+			sourceTree = "<group>";
+		};
+		2B73914B0A52C04C0017E123 /* Channel icons */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173E60A95C30A009E38F1 /* 1.png */,
+				2B3173E70A95C30A009E38F1 /* 3.png */,
+				2B3173E80A95C30A009E38F1 /* 16.png */,
+				2B3173E90A95C30A009E38F1 /* 22.png */,
+				2B3173EA0A95C30A009E38F1 /* 23.png */,
+				2B3173EB0A95C30A009E38F1 /* 24.png */,
+				2B3173EC0A95C30A009E38F1 /* 33.png */,
+				2B3173ED0A95C30A009E38F1 /* 35.png */,
+				2B3173EE0A95C30A009E38F1 /* 41.png */,
+				2B3173EF0A95C30A009E38F1 /* 57.png */,
+				2B3173F00A95C30A009E38F1 /* 60.png */,
+				2B3173F10A95C30A009E38F1 /* 72.png */,
+				2B3173F20A95C30A009E38F1 /* 73.png */,
+				2B3173F30A95C30A009E38F1 /* 75.png */,
+				2B3173F40A95C30A009E38F1 /* 104.png */,
+				2B3173F50A95C30A009E38F1 /* 105.png */,
+				2B3173F60A95C30A009E38F1 /* 106.png */,
+				2B3173F70A95C30A009E38F1 /* 107.png */,
+				2B3173F80A95C30A009E38F1 /* 110.png */,
+				2B3173F90A95C30A009E38F1 /* 111.png */,
+				2B3173FA0A95C30A009E38F1 /* 112.png */,
+				2B3173FB0A95C30A009E38F1 /* 113.png */,
+				2B3173FC0A95C30A009E38F1 /* 114.png */,
+				2B3173FD0A95C30A009E38F1 /* 115.png */,
+				2B3173FE0A95C30A009E38F1 /* 116.png */,
+				2B3173FF0A95C30A009E38F1 /* 117.png */,
+				2B3174000A95C30A009E38F1 /* 123.png */,
+				2B3174010A95C30A009E38F1 /* 124.png */,
+				2B3174020A95C30A009E38F1 /* 125.png */,
+			);
+			name = "Channel icons";
+			sourceTree = "<group>";
+		};
+		2BB510F30A39D85B00BA7F59 /* Toolbar icons */ = {
+			isa = PBXGroup;
+			children = (
+				2B3174220A95C3A3009E38F1 /* drawer.tiff */,
+				2B3174230A95C3A3009E38F1 /* icaltoolbar.tif */,
+				2B3174240A95C3A3009E38F1 /* inspectorButton.tiff */,
+				2B3174250A95C3A3009E38F1 /* popcorntub.psd */,
+				2B3174260A95C3A3009E38F1 /* popcorntub.tif */,
+				2B3174270A95C3A3009E38F1 /* primaserata.psd */,
+				2B3174280A95C3A3009E38F1 /* primaserata.tif */,
+				2B3174290A95C3A3009E38F1 /* reload.tiff */,
+				2B31742A0A95C3A3009E38F1 /* search.tif */,
+			);
+			name = "Toolbar icons";
+			sourceTree = "<group>";
+		};
+		2BB716640A3DBC68000BB181 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2B3176B90A95D554009E38F1 /* Add iCal reminder.applescript */,
+				2B3176BA0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		2BFE01F60A93622800246EA1 /* Nib Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B418F600A4C9E640065009C /* About.nib */,
+				2BCE83690A8F6DF20027CBB4 /* TVProgramDocument.nib */,
+				2B7359040A441D4500799D62 /* Preferences.nib */,
+				2B716D4D0A924D9800CC708D /* MainMenu.nib */,
+			);
+			name = "Nib Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B716EB20A92682C00CC708D /* MetadataImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B716EB50A92682D00CC708D /* Build configuration list for PBXNativeTarget "MetadataImporter" */;
+			buildPhases = (
+				2B716EAF0A92682C00CC708D /* Resources */,
+				2B716EB00A92682C00CC708D /* Sources */,
+				2B716EB10A92682C00CC708D /* Frameworks */,
+				2B7171B30A9283FE00CC708D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetadataImporter;
+			productName = MetadataImporter;
+			productReference = 2B716EB30A92682C00CC708D /* GuidaTV.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D1107260486CEB800E47090 /* GuidaTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GuidaTV" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				2B79552A0A43065100EBB75E /* AppleScript */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				2BB50C5C0A39943F00BA7F59 /* CopyFiles */,
+				2B716FE30A926B1F00CC708D /* Copy MDImporter */,
+				2B7173140A93058200CC708D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B716EF00A92698B00CC708D /* PBXTargetDependency */,
+			);
+			name = GuidaTV;
+			productInstallPath = "$(HOME)/Applications";
+			productName = GuidaTV;
+			productReference = 8D1107320486CEB800E47090 /* GuidaTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GuidaTV" */;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* GuidaTV */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* GuidaTV */,
+				2B716EB20A92682C00CC708D /* MetadataImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B716EAF0A92682C00CC708D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B716FB60A926A7B00CC708D /* Version in Resources */,
+				2B716FB70A926A7B00CC708D /* version.plist in Resources */,
+				2B716FB40A926A4000CC708D /* Info.plist in Resources */,
+				2B716FB50A926A4000CC708D /* schema.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B716FB30A926A1D00CC708D /* Info.plist in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				2BB50A800A39854B00BA7F59 /* Genres.plist in Resources */,
+				2BB50AD20A39872C00BA7F59 /* Channels.plist in Resources */,
+				2BB717040A3DE737000BB181 /* AppleScriptKit.sdef in Resources */,
+				2B7954230A42EDFB00EBB75E /* Localizable.strings in Resources */,
+				2B7359060A441D4500799D62 /* Preferences.nib in Resources */,
+				2B31745C0A95C46C009E38F1 /* GuidaTV-on.png in Resources */,
+				2B418F620A4C9E640065009C /* About.nib in Resources */,
+				2BCE836A0A8F6DF20027CBB4 /* TVProgramDocument.nib in Resources */,
+				2B716D4F0A924D9800CC708D /* MainMenu.nib in Resources */,
+				2B716EEA0A92697400CC708D /* Version in Resources */,
+				2B716EEB0A92697400CC708D /* version.plist in Resources */,
+				2B3173E20A95C2EA009E38F1 /* satellite-small.tif in Resources */,
+				2B3173E30A95C2EA009E38F1 /* satellite.tif in Resources */,
+				2B3173E40A95C2EA009E38F1 /* terrestrial-small.tif in Resources */,
+				2B3173E50A95C2EA009E38F1 /* terrestrial.tif in Resources */,
+				2B3174030A95C30A009E38F1 /* 1.png in Resources */,
+				2B3174040A95C30A009E38F1 /* 3.png in Resources */,
+				2B3174050A95C30A009E38F1 /* 16.png in Resources */,
+				2B3174060A95C30A009E38F1 /* 22.png in Resources */,
+				2B3174070A95C30A009E38F1 /* 23.png in Resources */,
+				2B3174080A95C30A009E38F1 /* 24.png in Resources */,
+				2B3174090A95C30A009E38F1 /* 33.png in Resources */,
+				2B31740A0A95C30A009E38F1 /* 35.png in Resources */,
+				2B31740B0A95C30A009E38F1 /* 41.png in Resources */,
+				2B31740C0A95C30A009E38F1 /* 57.png in Resources */,
+				2B31740D0A95C30A009E38F1 /* 60.png in Resources */,
+				2B31740E0A95C30A009E38F1 /* 72.png in Resources */,
+				2B31740F0A95C30A009E38F1 /* 73.png in Resources */,
+				2B3174100A95C30A009E38F1 /* 75.png in Resources */,
+				2B3174110A95C30A009E38F1 /* 104.png in Resources */,
+				2B3174120A95C30A009E38F1 /* 105.png in Resources */,
+				2B3174130A95C30A009E38F1 /* 106.png in Resources */,
+				2B3174140A95C30A009E38F1 /* 107.png in Resources */,
+				2B3174150A95C30A009E38F1 /* 110.png in Resources */,
+				2B3174160A95C30A009E38F1 /* 111.png in Resources */,
+				2B3174170A95C30A009E38F1 /* 112.png in Resources */,
+				2B3174180A95C30A009E38F1 /* 113.png in Resources */,
+				2B3174190A95C30A009E38F1 /* 114.png in Resources */,
+				2B31741A0A95C30A009E38F1 /* 115.png in Resources */,
+				2B31741B0A95C30B009E38F1 /* 116.png in Resources */,
+				2B31741C0A95C30B009E38F1 /* 117.png in Resources */,
+				2B31741D0A95C30B009E38F1 /* 123.png in Resources */,
+				2B31741E0A95C30B009E38F1 /* 124.png in Resources */,
+				2B31741F0A95C30B009E38F1 /* 125.png in Resources */,
+				2B3174210A95C349009E38F1 /* iCal.tif in Resources */,
+				2B31742B0A95C3A3009E38F1 /* drawer.tiff in Resources */,
+				2B31742C0A95C3A3009E38F1 /* icaltoolbar.tif in Resources */,
+				2B31742D0A95C3A3009E38F1 /* inspectorButton.tiff in Resources */,
+				2B31742E0A95C3A3009E38F1 /* popcorntub.psd in Resources */,
+				2B31742F0A95C3A4009E38F1 /* popcorntub.tif in Resources */,
+				2B3174300A95C3A4009E38F1 /* primaserata.psd in Resources */,
+				2B3174310A95C3A4009E38F1 /* primaserata.tif in Resources */,
+				2B3174320A95C3A4009E38F1 /* reload.tiff in Resources */,
+				2B3174330A95C3A4009E38F1 /* search.tif in Resources */,
+				2B3174370A95C3FC009E38F1 /* GuidaTV.icns in Resources */,
+				2B3174380A95C3FD009E38F1 /* tvguide.icns in Resources */,
+				2B3174390A95C3FD009E38F1 /* tvprogram.icns in Resources */,
+				2B3174410A95C441009E38F1 /* Action_Pressed.tiff in Resources */,
+				2B3174420A95C441009E38F1 /* Action.tiff in Resources */,
+				2B3174430A95C441009E38F1 /* FooterSpacer.tiff in Resources */,
+				2B3174440A95C441009E38F1 /* SearchBar.tif in Resources */,
+				2B3174450A95C441009E38F1 /* SmartFolderLarge.tiff in Resources */,
+				2B3174460A95C441009E38F1 /* SmartFolderSmall.tiff in Resources */,
+				2B3174470A95C441009E38F1 /* SplitterHandle.tiff in Resources */,
+				2B3174640A95C49C009E38F1 /* amazon.png in Resources */,
+				2B3174650A95C49C009E38F1 /* icon_amex.gif in Resources */,
+				2B3174660A95C49C009E38F1 /* icon_discover.gif in Resources */,
+				2B3174670A95C49C009E38F1 /* icon_echeck.gif in Resources */,
+				2B3174680A95C49C009E38F1 /* icon_mastercard.gif in Resources */,
+				2B3174690A95C49C009E38F1 /* icon_visa.gif in Resources */,
+				2B31746A0A95C49C009E38F1 /* paypal.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B7173140A93058200CC708D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# This script changes the way CURLHandle is linked to the Spotlight\n# Metadata Importer to allow a Framework to be linked to a bundle\n#\n\ninstall_name_tool -change @executable_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/MacOS/${PRODUCT_NAME}\"\n\notool -L \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/MacOS/${PRODUCT_NAME}\"\n\ninstall_name_tool -id @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n\notool -D \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B716EB00A92682C00CC708D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B7170210A926E1000CC708D /* GetMetadataForFile.m in Sources */,
+				2B7170220A926E1000CC708D /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B3174790A95C55F009E38F1 /* PreferencesController.m in Sources */,
+				2B3174840A95C568009E38F1 /* main.m in Sources */,
+				2B31747A0A95C55F009E38F1 /* ProgramArrayController.m in Sources */,
+				2B31747B0A95C55F009E38F1 /* ProgramsPrintView.m in Sources */,
+				2B31747C0A95C55F009E38F1 /* ThinSplitView.m in Sources */,
+				2B31747D0A95C55F009E38F1 /* ThinSplitViewDelegate.m in Sources */,
+				2B31747E0A95C55F009E38F1 /* TimeTransformer.m in Sources */,
+				2B31747F0A95C55F009E38F1 /* TVController.m in Sources */,
+				2B3174800A95C55F009E38F1 /* TVGuide.m in Sources */,
+				2B3174810A95C55F009E38F1 /* TVProgram.m in Sources */,
+				2B3174820A95C55F009E38F1 /* TVProgramDocument.m in Sources */,
+				2B3174830A95C55F009E38F1 /* TVTuner.m in Sources */,
+				2B3174720A95C536009E38F1 /* AboutController.m in Sources */,
+				2B3174730A95C536009E38F1 /* HyperLinkTextField.m in Sources */,
+				2B3174740A95C536009E38F1 /* IMDBClient.m in Sources */,
+				2B3174750A95C536009E38F1 /* MyPathTransformer.m in Sources */,
+				2B3174760A95C536009E38F1 /* NSArray+TVUtils.m in Sources */,
+				2B3174770A95C536009E38F1 /* NSString+SFHFUtils.m in Sources */,
+				2B3174780A95C536009E38F1 /* NSString+TVUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B716EF00A92698B00CC708D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B716EB20A92682C00CC708D /* MetadataImporter */;
+			targetProxy = 2B716EEF0A92698B00CC708D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2B418F600A4C9E640065009C /* About.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B418F610A4C9E640065009C /* English */,
+			);
+			name = About.nib;
+			sourceTree = "<group>";
+		};
+		2B716D4D0A924D9800CC708D /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B716D4E0A924D9800CC708D /* English */,
+				2B716D530A924DFC00CC708D /* Italian */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2B7359040A441D4500799D62 /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B7359050A441D4500799D62 /* Italian */,
+				2B735A1C0A44416D00799D62 /* English */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+		2B7954210A42EDFB00EBB75E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B7954220A42EDFB00EBB75E /* English */,
+				2B7954280A42EE3A00EBB75E /* Italian */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2BCE83690A8F6DF20027CBB4 /* TVProgramDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BCE83070A8F6B6A0027CBB4 /* English */,
+				2B6ACBB80A8F72840066D84F /* Italian */,
+			);
+			name = TVProgramDocument.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B716EB60A92682D00CC708D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/Metadata Importer\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/build\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Metadata Importer/Info.plist";
+				INSTALL_PATH = /Library/Spotlight;
+				LIBRARY_STYLE = Bundle;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = GuidaTV;
+				WRAPPER_EXTENSION = mdimporter;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		2B716EB70A92682D00CC708D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/Metadata Importer\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/build\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Metadata Importer/Info.plist";
+				INSTALL_PATH = /Library/Spotlight;
+				LIBRARY_STYLE = Bundle;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = GuidaTV;
+				WRAPPER_EXTENSION = mdimporter;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/build\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = GuidaTV;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS)",
+					"$(SRCROOT)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/build\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = GuidaTV;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B716EB50A92682D00CC708D /* Build configuration list for PBXNativeTarget "MetadataImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B716EB60A92682D00CC708D /* Debug */,
+				2B716EB70A92682D00CC708D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GuidaTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GuidaTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,93 @@
+{
+    IBClasses = (
+        {CLASS = BlueView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = HyperLinkTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
+        {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {filter = id; }; 
+            CLASS = ProgramArrayController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {
+            ACTIONS = {checkForUpdates = id; }; 
+            CLASS = SUUpdater; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addReminder = id; 
+                cancelDonationReminder = id; 
+                cancelReminder = id; 
+                dismissDonationReminderThenDonate = id; 
+                donate = id; 
+                emeLodge = id; 
+                export = id; 
+                nextDay = id; 
+                nextTimeslot = id; 
+                nowOnAir = id; 
+                previousDay = id; 
+                previousTimeslot = id; 
+                primeTime = id; 
+                print = id; 
+                setReminder = id; 
+                showPreferencesPanel = id; 
+                toggleAlreadyDonated = id; 
+                toggleControls = id; 
+                toggleDrawer = id; 
+                tune = id; 
+                updateDayThenTune = id; 
+                webSite = id; 
+            }; 
+            CLASS = TVController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                alreadyDonated = NSButton; 
+                controlsBg = NSImageView; 
+                dayMenu = NSPopUpButton; 
+                donateSheet = NSWindow; 
+                drawer = id; 
+                guide = TVGuide; 
+                hourMenu = NSPopUpButton; 
+                icalsheet = NSWindow; 
+                programsController = ProgramArrayController; 
+                sourcesController = NSArrayController; 
+                sourcestable = id; 
+                table = id; 
+                tuner = TVTuner; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = TVGuide; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {consumer = id; tuner = TVTuner; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TVProgram; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = TVProgramDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {programController = NSObjectController; }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            CLASS = TVTuner; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {progress = NSProgressIndicator; statusbar = NSTextField; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = ThinScrollView; LANGUAGE = ObjC; SUPERCLASS = NSScrollView; }, 
+        {CLASS = ThinSplitView; LANGUAGE = ObjC; SUPERCLASS = RBSplitView; }, 
+        {
+            CLASS = ThinSplitViewDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dragView = NSView; firstSplit = RBSplitSubview; mySplitView = RBSplitView; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
