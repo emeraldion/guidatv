@@ -188,6 +188,15 @@ static int TVSetReminder = 1;
 						source:[[[sourcesController selectedObjects] objectAtIndex:0] valueForKey:@"source"]];
 }
 
+- (IBAction)forceTune:(id)sender
+{
+	[guide setConsumer:self];
+	[guide fetchProgramsForDay:[dayMenu titleOfSelectedItem]
+						  hour:[hourMenu titleOfSelectedItem]
+						source:[[[sourcesController selectedObjects] objectAtIndex:0] valueForKey:@"source"]
+				   forceReload:YES];
+}
+
 - (void)updateDayMenu
 {
 	NSString *title = [dayMenu titleOfSelectedItem];

@@ -58,8 +58,9 @@
 - (void)saveDataToDisk;
 - (NSString *) pathForDataFile;
 
-- (NSString *) pathForProgram:(TVProgram *)p;
+- (NSString *)pathForProgram:(TVProgram *)p;
 
-- (NSArray *)programsForSource:(NSString *)source timeslot:(NSCalendarDate *)timeslot;
+- (void)fetchProgramsForDay:(NSString *)d hour:(NSString *)h source:(NSString *)s;
+- (void)fetchProgramsForDay:(NSString *)d hour:(NSString *)h source:(NSString *)s forceReload:(BOOL)force;
 
 @end

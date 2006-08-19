@@ -27,3 +27,4 @@
 "Terrestrial TV" = "TV Terrestre";
 "Satellite TV" = "TV Satellitare";
 "GuidaTV programs" = "GuidaTV programmi";
+"%a %e %b %Y, %H:%M" = "%a %e %b %Y, ore %H:%M";
