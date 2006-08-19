@@ -21,6 +21,10 @@
 /* End PBXAppleScriptBuildPhase section */
 
 /* Begin PBXBuildFile section */
+		2B1340950A975190003EDD70 /* CPVerticalAlignedCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */; };
+		2B1340960A975190003EDD70 /* CPVerticalAlignedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1340940A975190003EDD70 /* CPVerticalAlignedCell.m */; };
+		2B1341780A976362003EDD70 /* SourcesTableDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1341760A976362003EDD70 /* SourcesTableDelegate.h */; };
+		2B1341790A976362003EDD70 /* SourcesTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1341770A976362003EDD70 /* SourcesTableDelegate.m */; };
 		2B3173E20A95C2EA009E38F1 /* satellite-small.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173DE0A95C2EA009E38F1 /* satellite-small.tif */; };
 		2B3173E30A95C2EA009E38F1 /* satellite.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173DF0A95C2EA009E38F1 /* satellite.tif */; };
 		2B3173E40A95C2EA009E38F1 /* terrestrial-small.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173E00A95C2EA009E38F1 /* terrestrial-small.tif */; };
@@ -183,6 +187,8 @@
 				2B31758F0A95C6E3009E38F1 /* CURLHandle.framework in CopyFiles */,
 				2B3175900A95C6E3009E38F1 /* RBSplitView.framework in CopyFiles */,
 				2B3175910A95C6E3009E38F1 /* Sparkle.framework in CopyFiles */,
+				2B1340950A975190003EDD70 /* CPVerticalAlignedCell.h in CopyFiles */,
+				2B1341780A976362003EDD70 /* SourcesTableDelegate.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +200,10 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CPVerticalAlignedCell.h; path = Sources/CPVerticalAlignedCell.h; sourceTree = "<group>"; };
+		2B1340940A975190003EDD70 /* CPVerticalAlignedCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = CPVerticalAlignedCell.m; path = Sources/CPVerticalAlignedCell.m; sourceTree = "<group>"; };
+		2B1341760A976362003EDD70 /* SourcesTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SourcesTableDelegate.h; path = Sources/SourcesTableDelegate.h; sourceTree = "<group>"; };
+		2B1341770A976362003EDD70 /* SourcesTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SourcesTableDelegate.m; path = Sources/SourcesTableDelegate.m; sourceTree = "<group>"; };
 		2B3173B70A95C283009E38F1 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AboutController.h; path = Sources/AboutController.h; sourceTree = "<group>"; };
 		2B3173B80A95C283009E38F1 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AboutController.m; path = Sources/AboutController.m; sourceTree = "<group>"; };
 		2B3173B90A95C283009E38F1 /* GuidaTV_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GuidaTV_Prefix.pch; path = Sources/GuidaTV_Prefix.pch; sourceTree = "<group>"; };
@@ -360,6 +370,8 @@
 			children = (
 				2B3173B70A95C283009E38F1 /* AboutController.h */,
 				2B3173B80A95C283009E38F1 /* AboutController.m */,
+				2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */,
+				2B1340940A975190003EDD70 /* CPVerticalAlignedCell.m */,
 				2B3173BA0A95C283009E38F1 /* HyperLinkTextField.h */,
 				2B3173BB0A95C283009E38F1 /* HyperLinkTextField.m */,
 				2B3173BC0A95C283009E38F1 /* IMDBClient.h */,
@@ -394,6 +406,8 @@
 				2B3173DB0A95C283009E38F1 /* TVProgramDocument.m */,
 				2B3173DC0A95C283009E38F1 /* TVTuner.h */,
 				2B3173DD0A95C283009E38F1 /* TVTuner.m */,
+				2B1341760A976362003EDD70 /* SourcesTableDelegate.h */,
+				2B1341770A976362003EDD70 /* SourcesTableDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -830,6 +844,8 @@
 				2B3174760A95C536009E38F1 /* NSArray+TVUtils.m in Sources */,
 				2B3174770A95C536009E38F1 /* NSString+SFHFUtils.m in Sources */,
 				2B3174780A95C536009E38F1 /* NSString+TVUtils.m in Sources */,
+				2B1340960A975190003EDD70 /* CPVerticalAlignedCell.m in Sources */,
+				2B1341790A976362003EDD70 /* SourcesTableDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
