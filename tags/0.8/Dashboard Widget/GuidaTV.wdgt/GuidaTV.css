@@ -1,0 +1,310 @@
+body
+{
+	margin: 0;
+	font-family: "Lucida Grande";
+}
+
+/* Front of the widget */
+#front
+{
+	width: 368px;
+	height: 238px;
+}
+
+#tv
+{
+	/* the chassis */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 368px;
+	height: 238px;
+	background: transparent url("img/front.png") no-repeat 0 0;
+	z-index: 0;
+}
+
+#screen
+{
+	position: absolute;
+	top: 24px;
+	left: 28px;
+	width: 312px;
+	height: 176px;
+	background-color: #000;
+	z-index: 1;
+}
+
+#gloss
+{
+	position: absolute;
+	width: 312px;
+	height: 176px;
+	background: transparent url("img/gloss.png") no-repeat 0 0;
+	z-index: 0;
+}
+
+#noise
+{
+	display: none;
+	position: absolute;
+	width: 312px;
+	height: 176px;
+	background: transparent url("img/whitenoise.gif") repeat 0 0;
+	z-index: 3;
+}
+
+#bars
+{
+	position: absolute;
+	width: 312px;
+	height: 176px;
+	background: transparent url("img/bars.gif") repeat 0 0;
+	z-index: 2;
+	opacity: 0;
+}
+
+#container
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 312px;
+	height: 176px;
+	overflow: hidden;
+	z-index: 2;
+}
+
+#content, #dummy
+{
+	min-height: 176px;
+	width: 312px;
+	overflow: visible;
+	position: relative;
+	z-index: 2;
+/*	opacity: 0.8;*/
+}
+
+#dummy
+{
+	position: absolute;
+	opacity: 0.0;
+}
+
+#onscreen
+{
+	position: absolute;
+	width: 185px;
+	height: 15px;
+	left: 85px;
+	bottom: 50px;
+	text-align: center;
+	padding: 3px 5px;
+	background: transparent url("img/onscreen.png") no-repeat 0 0;
+	z-index: 12;
+	display: none;
+}
+
+#onscreen-message
+{
+	background: transparent url("img/update-bubble.png") no-repeat center left;
+	padding-left: 15px;
+	font-size: 11px;
+	height: 15px;
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+	font-weight: bold;
+	margin: auto;
+}
+
+#controls
+{
+	display: none;
+	z-index: 13;
+	position: absolute;
+	bottom: 34px;
+	left: 28px;
+	height: 19px;
+	padding: 3px 35px;
+	background: transparent url("img/controls.png") no-repeat center center;
+	width: 242px;
+}
+
+#controls p
+{
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	background: url(img/spot.png) no-repeat center left;
+}
+
+input[type=search] {
+	width: 223px;
+	margin: 0;
+}
+
+/* UI Controls */
+.flip
+{
+	width: 13px;
+	height: 13px;
+	margin-top: 3px;
+	position: absolute;
+	bottom: 14px;
+	right: 28px;
+}
+
+#flip
+{
+	opacity: 0.0;
+	background: transparent url("file:///System/Library/WidgetResources/ibutton/white_i.png") no-repeat 0 0;
+	z-index: 8000;
+}
+
+#fliprollie
+{
+	display: none;
+	opacity: 0.25;
+	background: transparent url("file:///System/Library/WidgetResources/ibutton/white_rollie.png") no-repeat 0 0;
+	z-index: 7999;
+}
+
+#poweron
+{
+	width: 24px;
+	height: 23px;
+	position: absolute;
+	bottom: 9px;
+	left: 23px;
+	display: none;
+	background: transparent url("img/poweron.png") no-repeat 0 0;	
+}
+
+/* Back of the widget */
+#back
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 368px;
+	height: 238px;
+	background: transparent url("img/back.png") no-repeat 0 0;
+}
+
+.backheader
+{
+	text-align: center;
+	font-size: 13px;
+	color: #ddd;
+}
+
+#back p
+{
+	color: #fff;
+	font-size: 10px;
+}
+
+.backprefs { margin-top: 105px; }
+
+.backinfo
+{
+	text-align: center;
+	font-size: 9px;
+	color: #ddd;
+}
+
+h2#version
+{
+	font-family: "Lucida Grande";
+	color: #444;
+	font-size: 10pt;
+	font-weight: bold;
+	position: absolute;
+	right: 15px;
+	text-align: right;
+	margin: 7px 0 0 0;
+}
+
+#col1
+{
+	float: left;
+	width: 150px;
+}
+
+#col2 { margin-left: 160px; }
+
+#done
+{
+	float: right;
+	margin-right: 18px;
+}
+
+#donate
+{
+	float: left;
+	margin-left: 18px;
+}
+#info
+{
+	float: left;
+	margin-left: 1px;
+}
+
+#buttons
+{
+	position: absolute;
+	width: 100%;
+	bottom: 28px;
+}
+
+#settings { margin: 20px 59px 10px 59px; }
+
+a#eme-link
+{
+	display: block;
+	position: absolute;
+	left: 136px;
+	top: 155px;
+	width: 43px;
+	height: 46px;
+	background: transparent url("img/emelogo.png") no-repeat 0 0;
+}
+
+a#qreate-link
+{
+	display: block;
+	position: absolute;
+	left: 192px;
+	top: 155px;
+	width: 40px;
+	height: 48px;
+	background: transparent url("img/qreatelogo.png") no-repeat 0 0;
+}
+
+a#eme-link:hover { background: transparent url("img/emelogo-hover.png") no-repeat 0 0; }
+a#qreate-link:hover { background: transparent url("img/qreatelogo-hover.png") no-repeat 0 0; }
+
+/* Layout and appearance */
+a
+{
+	color: #ddd;
+	text-decoration: none;
+}
+
+a:hover, a:active { color: #6af; }
+
+.label
+{
+	color: #fff;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+select.popup
+{
+	width: 90px;
+	display: block;
+	opacity: 1.0;
+}
+
+select.wide { width: 150px; }

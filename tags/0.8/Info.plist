@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tvprogram</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>tvprogram.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>TV Program</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>TVPr</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>it.emeraldion.cocoa.guidatv.tvprogram</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSDocumentClass</key>
+			<string>TVProgramDocument</string>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>XML</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>tvguide</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>tvguide.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>TV Guide</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>TVGd</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>it.emeraldion.cocoa.guidatv.tvguide</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>XML</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>GuidaTV</string>
+	<key>CFBundleIdentifier</key>
+	<string>it.emeraldion.cocoa.guidatv</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>EMEl</string>
+	<key>CFBundleVersion</key>
+	<string>0.8</string>
+	<key>NSAppleScriptEnabled</key>
+	<string>YES</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SUFeedURL</key>
+	<string>http://www.emeraldion.it/software/macosx/guidatv/appcast/</string>
+</dict>
+</plist>

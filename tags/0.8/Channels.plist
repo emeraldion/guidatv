@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>-1</key>
+	<string>N/A</string>
+	<key>0</key>
+	<string>Tutti</string>
+	<key>1</key>
+	<string>Rai Uno</string>
+	<key>3</key>
+	<string>Rai Due</string>
+	<key>16</key>
+	<string>Rai Tre</string>
+	<key>24</key>
+	<string>Rete 4</string>
+	<key>22</key>
+	<string>Canale 5</string>
+	<key>23</key>
+	<string>Italia 1</string>
+	<key>75</key>
+	<string>La 7</string>
+	<key>73</key>
+	<string>MTV</string>
+	<key>72</key>
+	<string>All Music</string>
+<key>107</key>
+<string>Cult Network Italia</string>
+<key>57</key>
+<string>Duel Tv</string>
+<key>104</key>
+<string>Fox</string>
+<key>125</key>
+<string>Fox Life</string>
+<key>41</key>
+<string>Happy Channel</string>
+<key>35</key>
+<string>Jimmy</string>
+<key>33</key>
+<string>Eurosport</string>
+<key>105</key>
+<string>RaiSat Extra</string>
+<key>115</key>
+<string>RaiSat Cinema World</string>
+<key>106</key>
+<string>RaiSat Premium</string>
+<key>110</key>
+<string>Sky Cinema 1</string>
+<key>113</key>
+<string>Sky Cinema 16:9</string>
+<key>111</key>
+<string>Sky Cinema 3</string>
+<key>112</key>
+<string>Sky Cinema Autore</string>
+<key>124</key>
+<string>Sky Cinema Classics</string>
+<key>114</key>
+<string>Sky Cinema Max</string>
+<key>60</key>
+<string>Studio Universal</string>
+<key>116</key>
+<string>Sky Sport 1</string>
+<key>117</key>
+<string>Sky Sport 2</string>
+<key>123</key>
+<string>Sky Sport 3</string>	
+
+</dict>
+</plist>

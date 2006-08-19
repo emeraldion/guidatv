@@ -1,0 +1,97 @@
+<html>
+
+<head>
+	<style type="text/css">
+		@import "GuidaTV.css";
+		@import "Request.css";
+		@import "Scroller.css";
+	</style>
+	
+	<script type="text/javascript" src="GuidaTV.js" charset="utf-8"/>
+	<script type="text/javascript" src="Remote.js" charset="utf-8"/>
+	<script type="text/javascript" src="Request.js" charset="utf-8"/>
+	<script type="text/javascript" src="Scroller.js" charset="utf-8"/>
+	<script type="text/javascript" src="Throbber.js" charset="utf-8"/>
+	<script type="text/javascript" src="VersionChecker.js" charset="utf-8"/>
+	<script type="text/javascript" src="file:///System/Library/WidgetResources/button/genericButton.js" charset="utf-8"/>
+</head>
+
+<body onload="setup();">
+	<div id="front" onmousemove="mousemove(event);" onmouseout="mouseexit(event);" onmousewheel="mousescroll(event);">
+		<div id="myScrollBar">
+			<div id="myScrollTrack">
+				<div class="scrollTrackTop" id="myScrollTrackTop"></div>
+				<div class="scrollTrackMid" id="myScrollTrackMid"></div>
+				<div class="scrollTrackBot" id="myScrollTrackBot"></div>
+			</div>
+			<div id="myScrollThumb">
+				<div class="scrollThumbTop" id="myScrollThumbTop"></div>
+				<div class="scrollThumbMid" id="myScrollThumbMid"></div>
+				<div class="scrollThumbBot" id="myScrollThumbBot"></div>
+			</div>
+		</div>
+		<div id="controls">
+			<p>
+				<input type="search" id="filter" name="filter" onkeyup="filter(event, this.value)" onsearch="filter(event, this.value)" />
+			</p>
+		</div>
+		<div id="tv"></div>
+		<div id="screen">
+			<div id="container">
+				<div id="gloss"></div>
+				<div id="noise"></div>
+				<div id="bars"></div>
+				<div id="dummy"></div>
+				<div id="content"></div>
+			</div>
+		</div>
+
+		<div id="onscreen">
+			<div id="onscreen-message"><a id="update-text" href="javascript:goToUrl('http://www.emeraldion.it/software/widgets/guidatv/');"></a></div>
+		</div>
+
+		<div id="poweron"></div>
+		<div class="flip" id="fliprollie"></div>
+		<div class="flip" id="flip" onclick="showPrefs(event);" onmouseover="enterflip(event);" onmouseout="exitflip(event);"></div>
+	</div>
+	
+	<div id="back">
+		<h2 id="version"></h2>
+		<div id="settings">
+			<form>
+				<div id="col1">
+					<span class="label">Tipo emittenti</span>
+					<select id="source-selector" class="popup wide"></select>
+	
+					<span class="label">Giorno</span>
+					<select id="day-selector" class="popup wide"></select>
+
+					<span class="label">Canale</span>
+					<select id="channel-selector" class="popup wide"></select>
+				</div>
+				<div id="col2">
+					<span class="label">Genere</span>
+					<select id="genre-selector" class="popup"></select>
+	
+					<span class="label">Ora</span>
+					<select id="timeslice-selector" class="popup"></select>
+
+					<span class="label">Skin</span>
+					<select id="skin-selector" class="popup">
+						<option value="retro">Default</option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<div class="backinfo">A collaborative effort from <a href="javascript:goToUrl('http://www.emeraldion.it')">Emeraldion Lodge</a> and <a href="javascript:goToUrl('http://www.qreate.net')">Qreate</a>.</div>
+		<a id="eme-link" href="javascript:goToUrl('http://www.emeraldion.it')">&nbsp;</a>
+		<a id="qreate-link" href="javascript:goToUrl('http://www.qreate.net')">&nbsp;</a>
+		<div id="buttons">
+			<div class="button" id="done"></div>
+			<div class="button" id="donate"></div>
+			<div class="button" id="info"></div>
+		</div>
+	</div>
+</body>
+
+</html>
