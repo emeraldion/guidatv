@@ -52,6 +52,7 @@ static int TVSetReminder = 1;
 @class MyPathTransformer;
 @class TimeTransformer;
 @class ProgramsPrintView;
+@class CPVerticalAlignedCell;
 
 @implementation TVController
 
@@ -95,6 +96,9 @@ static int TVSetReminder = 1;
 		* FIXME: find a way to set up the Program Document as next responder
 	 */
 	//	[table setDoubleAction:@selector(programEditorFor:)];
+	[sourcestable setRowHeight:42.0];
+	NSTableColumn *column = [sourcestable tableColumnWithIdentifier:@"sourcename"];
+	[column setDataCell:[[CPVerticalAlignedCell alloc] init]];
 	
 	if (!NSClassFromString(@"NSViewAnimation"))
 	{

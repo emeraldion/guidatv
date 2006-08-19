@@ -1,6 +1,7 @@
 {
     IBClasses = (
         {CLASS = BlueView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = CPVerticalAlignedCell; LANGUAGE = ObjC; SUPERCLASS = NSCell; }, 
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {CLASS = HyperLinkTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
         {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
@@ -16,6 +17,7 @@
             LANGUAGE = ObjC; 
             SUPERCLASS = NSObject; 
         }, 
+        {CLASS = SourcesTableDelegate; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
             ACTIONS = {
                 addReminder = id; 
