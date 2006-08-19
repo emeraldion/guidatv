@@ -365,7 +365,8 @@ static int TVSetReminder = 1;
 	[sPanel setTitle:NSLocalizedString(@"Export", @"Export")];
 	[sPanel setRequiredFileType:@"txt"];
 	[sPanel setCanSelectHiddenExtension:YES];
-	if ([sPanel runModalForDirectory:NSHomeDirectory() file:@""] == NSFileHandlingPanelOKButton)
+	if ([sPanel runModalForDirectory:NSHomeDirectory() 
+								file:NSLocalizedString(@"GuidaTV programs", @"GuidaTV programs")] == NSFileHandlingPanelOKButton)
 	{
 		NSString *filePath =  [sPanel filename];
 		[programsController commitEditing];
