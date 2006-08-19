@@ -74,6 +74,7 @@ extern NSString *TVTunerSatellite;
 - (IBAction) toggleDrawer:(id)sender;
 - (IBAction) updateDayThenTune:(id)sender;
 - (IBAction) tune:(id)sender;
+- (IBAction) forceTune:(id)sender;
 - (IBAction) addReminder:(id)sender;
 - (IBAction) cancelReminder:(id)sender;
 - (IBAction) cancelDonationReminder:(id)sender;

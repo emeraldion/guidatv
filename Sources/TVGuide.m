@@ -255,9 +255,17 @@ TVGuide *tvGuideSharedInstance;
 
 - (void)fetchProgramsForDay:(NSString *)d hour:(NSString *)h source:(NSString *)s
 {
+	[self fetchProgramsForDay:d
+						 hour:h
+					   source:s
+				  forceReload:NO];
+}
+
+- (void)fetchProgramsForDay:(NSString *)d hour:(NSString *)h source:(NSString *)s forceReload:(BOOL)force
+{
 	[self setDay:d hour:h source:s];
 	NSArray *paths = [guide valueForKey:[NSString stringWithFormat:@"%@-%@-%@", d, h, s]];
-	if (paths == nil)
+	if ((paths == nil) || force)
 	{
 		[tuner setConsumer:self];
 		[tuner fetchProgramsForDay:d
@@ -279,7 +287,7 @@ TVGuide *tvGuideSharedInstance;
 		{
 			[consumer programsDidBecomeAvailable:p];
 		}		
-	}
+	}	
 }
 
 @end
