@@ -11,7 +11,6 @@
 	To export this declaration, fill in the fields with your application's 
 	information, and uncomment the block of XML.
 	-->
-	<!--
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -37,7 +36,7 @@
 			</dict>
 		</dict>
 	</array>
--->
+	
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDocumentTypes</key>
