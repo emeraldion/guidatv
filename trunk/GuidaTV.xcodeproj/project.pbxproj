@@ -662,7 +662,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GuidaTV" */;
 			buildPhases = (
-				2BDEA53E0A97B949003CCAA1 /* Localize Nib Files */,
 				8D1107290486CEB800E47090 /* Resources */,
 				2B79552A0A43065100EBB75E /* AppleScript */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -812,20 +811,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#\n# This script changes the way CURLHandle is linked to the Spotlight\n# Metadata Importer to allow a Framework to be linked to a bundle\n#\n\ninstall_name_tool -change @executable_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/MacOS/${PRODUCT_NAME}\"\n\notool -L \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/MacOS/${PRODUCT_NAME}\"\n\ninstall_name_tool -id @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n\notool -D \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n";
-		};
-		2BDEA53E0A97B949003CCAA1 /* Localize Nib Files */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Localize Nib Files";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#\n# This script copies the Nib files from English.lproj folder to all\n# localization folders and calls nibtool to localize them\n#\n\n# for every language\nfor LANG in `cat $PROJECT_DIR/Localizations`\ndo\n  # for every Nib file in English.lproj\n  for NIB in `ls -d $PROJECT_DIR/English.lproj/*.nib`\n  do\n    # copy to language folder\n    cp -fR $NIB $PROJECT_DIR/$LANG.lproj/\n\n    # get Nib name\n    NIB_NAME=`echo $NIB | awk 'BEGIN { FS = \"/|.nib\" } \\\n       { printf $(NF-1) }' -`\n\n    # move to language folder\n    cd $PROJECT_DIR/$LANG.lproj\n\n    # localize the file\n    nibtool -w _$NIB_NAME.nib -d $NIB_NAME.strings $NIB_NAME.nib\n\n    # remove old Nib\n    rm -rf $NIB_NAME.nib\n\n    # rename new Nib\n    mv _$NIB_NAME.nib $NIB_NAME.nib\n  done\ndone";
 		};
 /* End PBXShellScriptBuildPhase section */
 
