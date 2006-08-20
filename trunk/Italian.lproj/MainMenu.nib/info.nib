@@ -20,6 +20,10 @@
 		<integer>213</integer>
 		<integer>501</integer>
 	</array>
+	<key>IBOpenObjects</key>
+	<array>
+		<integer>21</integer>
+	</array>
 	<key>IBSystem Version</key>
 	<string>8J135</string>
 </dict>

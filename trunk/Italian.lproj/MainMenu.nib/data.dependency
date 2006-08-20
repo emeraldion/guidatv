@@ -4,10 +4,9 @@
 <dict>
 	<key>IBPaletteDependency</key>
 	<array>
+		<string>RollOverButtonPalette</string>
 		<string>ASKPalette</string>
 		<string>RBSplitView</string>
-		<string>Controllers</string>
-		<string>RollOverButtonPalette</string>
 	</array>
 </dict>
 </plist>
