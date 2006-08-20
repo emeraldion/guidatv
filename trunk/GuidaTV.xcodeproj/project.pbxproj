@@ -332,6 +332,7 @@
 		2BB716060A3DBA35000BB181 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
 		2BB717030A3DE737000BB181 /* AppleScriptKit.sdef */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.sdef; name = AppleScriptKit.sdef; path = /System/Library/Frameworks/AppleScriptKit.framework/Versions/A/Resources/AppleScriptKit.sdef; sourceTree = "<absolute>"; };
 		2BCE83070A8F6B6A0027CBB4 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TVProgramDocument.nib; sourceTree = "<group>"; };
+		2BDEA5E40A97CEA3003CCAA1 /* Localizations */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Localizations; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* GuidaTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuidaTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -490,6 +491,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				2BFE01F60A93622800246EA1 /* Nib Files */,
 				2B7954210A42EDFB00EBB75E /* Localizable.strings */,
+				2BDEA5E40A97CEA3003CCAA1 /* Localizations */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -660,13 +662,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "GuidaTV" */;
 			buildPhases = (
+				2BDEA53E0A97B949003CCAA1 /* Localize Nib Files */,
 				8D1107290486CEB800E47090 /* Resources */,
 				2B79552A0A43065100EBB75E /* AppleScript */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				2BB50C5C0A39943F00BA7F59 /* CopyFiles */,
 				2B716FE30A926B1F00CC708D /* Copy MDImporter */,
-				2B7173140A93058200CC708D /* ShellScript */,
+				2B7173140A93058200CC708D /* Change Install Name */,
 			);
 			buildRules = (
 			);
@@ -796,18 +799,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B7173140A93058200CC708D /* ShellScript */ = {
+		2B7173140A93058200CC708D /* Change Install Name */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Change Install Name";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#\n# This script changes the way CURLHandle is linked to the Spotlight\n# Metadata Importer to allow a Framework to be linked to a bundle\n#\n\ninstall_name_tool -change @executable_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/MacOS/${PRODUCT_NAME}\"\n\notool -L \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/MacOS/${PRODUCT_NAME}\"\n\ninstall_name_tool -id @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n\notool -D \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n";
+		};
+		2BDEA53E0A97B949003CCAA1 /* Localize Nib Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Localize Nib Files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# This script copies the Nib files from English.lproj folder to all\n# localization folders and calls nibtool to localize them\n#\n\n# for every language\nfor LANG in `cat $PROJECT_DIR/Localizations`\ndo\n  # for every Nib file in English.lproj\n  for NIB in `ls -d $PROJECT_DIR/English.lproj/*.nib`\n  do\n    # copy to language folder\n    cp -fR $NIB $PROJECT_DIR/$LANG.lproj/\n\n    # get Nib name\n    NIB_NAME=`echo $NIB | awk 'BEGIN { FS = \"/|.nib\" } \\\n       { printf $(NF-1) }' -`\n\n    # move to language folder\n    cd $PROJECT_DIR/$LANG.lproj\n\n    # localize the file\n    nibtool -w _$NIB_NAME.nib -d $NIB_NAME.strings $NIB_NAME.nib\n\n    # remove old Nib\n    rm -rf $NIB_NAME.nib\n\n    # rename new Nib\n    mv _$NIB_NAME.nib $NIB_NAME.nib\n  done\ndone";
 		};
 /* End PBXShellScriptBuildPhase section */
 
