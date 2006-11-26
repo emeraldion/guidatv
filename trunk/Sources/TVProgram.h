@@ -46,11 +46,11 @@ extern int TVProgramMaxTitleLength;
 
 #pragma mark === Static Initializers ===
 
-+ (id)programWithTitle:(NSString *)aTitle progid:(NSString *)progid genre:(NSString *)aGenre channel:(int)aChannel startDate:(NSCalendarDate *)aDate onair:(BOOL)aOnair;
++ (id)programWithTitle:(NSString *)aTitle progid:(NSString *)progid genre:(NSString *)aGenre channel:(int)aChannel startDate:(NSCalendarDate *)aDate;
 
 #pragma mark === Initializers ===
 
-- (id)initWithTitle:(NSString *)aTitle progid:(NSString *)progid genre:(NSString *)aGenre channel:(int)aChannel startDate:(NSCalendarDate *)aDate onair:(BOOL)aOnair;
+- (id)initWithTitle:(NSString *)aTitle progid:(NSString *)progid genre:(NSString *)aGenre channel:(int)aChannel startDate:(NSCalendarDate *)aDate;
 - (id)init;
 
 #pragma mark === Setter Methods ===
@@ -60,6 +60,7 @@ extern int TVProgramMaxTitleLength;
 - (void)setGenre:(NSString *)aGenre;
 - (void)setEndDate:(NSCalendarDate *)aDate;
 - (void)setStartDate:(NSCalendarDate *)aDate;
+- (void)setReview:(NSString *)aReview;
 - (void)setIMDBURLString:(NSString *)urlString;
 - (void)setUserComments:(NSString *)comments;
 - (void)setProgid:(NSString *)progid;
@@ -81,6 +82,7 @@ extern int TVProgramMaxTitleLength;
 
 - (BOOL)onair;
 - (NSString *)description;
-
+- (NSImage *)onairImg;
+- (NSImage *)channelImg;
 
 @end

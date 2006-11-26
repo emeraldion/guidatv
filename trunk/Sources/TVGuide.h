@@ -56,6 +56,7 @@
 
 - (void)loadDataFromDisk;
 - (void)saveDataToDisk;
+- (void)saveProgram:(TVProgram *)prog;
 - (NSString *) pathForDataFile;
 
 - (NSString *)pathForProgram:(TVProgram *)p;

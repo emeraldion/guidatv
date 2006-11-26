@@ -177,6 +177,14 @@ TVGuide *tvGuideSharedInstance;
 								toFile:[self pathForDataFile]];
 }
 
+- (void)saveProgram:(TVProgram *)prog
+{
+	NSString *programPath = [self pathForProgram:prog];
+
+	BOOL result = [NSKeyedArchiver archiveRootObject:prog
+											  toFile:programPath];
+}
+
 - (NSString *)pathForProgram:(TVProgram *)prog
 {
 	NSFileManager *fileManager = [NSFileManager defaultManager];

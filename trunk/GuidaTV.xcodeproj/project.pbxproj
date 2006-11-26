@@ -140,6 +140,12 @@
 		2BB716070A3DBA35000BB181 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB716060A3DBA35000BB181 /* AppleScriptKit.framework */; };
 		2BB717040A3DE737000BB181 /* AppleScriptKit.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2BB717030A3DE737000BB181 /* AppleScriptKit.sdef */; };
 		2BCE836A0A8F6DF20027CBB4 /* TVProgramDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE83690A8F6DF20027CBB4 /* TVProgramDocument.nib */; };
+		2BD00DB00B19C51F00F27EAF /* FlatColorView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BD00DAE0B19C51F00F27EAF /* FlatColorView.h */; };
+		2BD00DB10B19C51F00F27EAF /* FlatColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD00DAF0B19C51F00F27EAF /* FlatColorView.m */; };
+		2BD00E240B19D2F600F27EAF /* ELSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD00E220B19D2F600F27EAF /* ELSplitView.m */; };
+		2BD00E250B19D2F600F27EAF /* ELSplitView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BD00E230B19D2F600F27EAF /* ELSplitView.h */; };
+		2BD00E4C0B19D38A00F27EAF /* splitview-grip.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2BD00E4A0B19D38A00F27EAF /* splitview-grip.tif */; };
+		2BD00E4D0B19D38A00F27EAF /* splitview-bar.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2BD00E4B0B19D38A00F27EAF /* splitview-bar.tif */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +195,8 @@
 				2B3175910A95C6E3009E38F1 /* Sparkle.framework in CopyFiles */,
 				2B1340950A975190003EDD70 /* CPVerticalAlignedCell.h in CopyFiles */,
 				2B1341780A976362003EDD70 /* SourcesTableDelegate.h in CopyFiles */,
+				2BD00DB00B19C51F00F27EAF /* FlatColorView.h in CopyFiles */,
+				2BD00E250B19D2F600F27EAF /* ELSplitView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +340,12 @@
 		2BB716060A3DBA35000BB181 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
 		2BB717030A3DE737000BB181 /* AppleScriptKit.sdef */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.sdef; name = AppleScriptKit.sdef; path = /System/Library/Frameworks/AppleScriptKit.framework/Versions/A/Resources/AppleScriptKit.sdef; sourceTree = "<absolute>"; };
 		2BCE83070A8F6B6A0027CBB4 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TVProgramDocument.nib; sourceTree = "<group>"; };
+		2BD00DAE0B19C51F00F27EAF /* FlatColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlatColorView.h; path = Sources/FlatColorView.h; sourceTree = "<group>"; };
+		2BD00DAF0B19C51F00F27EAF /* FlatColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlatColorView.m; path = Sources/FlatColorView.m; sourceTree = "<group>"; };
+		2BD00E220B19D2F600F27EAF /* ELSplitView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ELSplitView.m; path = Sources/ELSplitView.m; sourceTree = "<group>"; };
+		2BD00E230B19D2F600F27EAF /* ELSplitView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ELSplitView.h; path = Sources/ELSplitView.h; sourceTree = "<group>"; };
+		2BD00E4A0B19D38A00F27EAF /* splitview-grip.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "splitview-grip.tif"; path = "Images/splitview-grip.tif"; sourceTree = "<group>"; };
+		2BD00E4B0B19D38A00F27EAF /* splitview-bar.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "splitview-bar.tif"; path = "Images/splitview-bar.tif"; sourceTree = "<group>"; };
 		2BDEA5E40A97CEA3003CCAA1 /* Localizations */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Localizations; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* GuidaTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuidaTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,46 +383,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2B3173B70A95C283009E38F1 /* AboutController.h */,
-				2B3173B80A95C283009E38F1 /* AboutController.m */,
-				2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */,
-				2B1340940A975190003EDD70 /* CPVerticalAlignedCell.m */,
-				2B3173BA0A95C283009E38F1 /* HyperLinkTextField.h */,
-				2B3173BB0A95C283009E38F1 /* HyperLinkTextField.m */,
-				2B3173BC0A95C283009E38F1 /* IMDBClient.h */,
-				2B3173BD0A95C283009E38F1 /* IMDBClient.m */,
-				2B3173BF0A95C283009E38F1 /* MyPathTransformer.h */,
-				2B3173C00A95C283009E38F1 /* MyPathTransformer.m */,
-				2B3173C10A95C283009E38F1 /* NSArray+TVUtils.h */,
-				2B3173C20A95C283009E38F1 /* NSArray+TVUtils.m */,
-				2B3173C30A95C283009E38F1 /* NSString+SFHFUtils.h */,
-				2B3173C40A95C283009E38F1 /* NSString+SFHFUtils.m */,
-				2B3173C50A95C283009E38F1 /* NSString+TVUtils.h */,
-				2B3173C60A95C283009E38F1 /* NSString+TVUtils.m */,
-				2B3173C70A95C283009E38F1 /* PreferencesController.h */,
-				2B3173C80A95C283009E38F1 /* PreferencesController.m */,
-				2B3173C90A95C283009E38F1 /* ProgramArrayController.h */,
-				2B3173CA0A95C283009E38F1 /* ProgramArrayController.m */,
-				2B3173CB0A95C283009E38F1 /* ProgramsPrintView.h */,
-				2B3173CC0A95C283009E38F1 /* ProgramsPrintView.m */,
-				2B3173CD0A95C283009E38F1 /* ThinSplitView.h */,
-				2B3173CE0A95C283009E38F1 /* ThinSplitView.m */,
-				2B3173CF0A95C283009E38F1 /* ThinSplitViewDelegate.h */,
-				2B3173D00A95C283009E38F1 /* ThinSplitViewDelegate.m */,
-				2B3173D10A95C283009E38F1 /* TimeTransformer.h */,
-				2B3173D20A95C283009E38F1 /* TimeTransformer.m */,
-				2B3173D40A95C283009E38F1 /* TVController.h */,
-				2B3173D50A95C283009E38F1 /* TVController.m */,
-				2B3173D60A95C283009E38F1 /* TVGuide.h */,
-				2B3173D70A95C283009E38F1 /* TVGuide.m */,
-				2B3173D80A95C283009E38F1 /* TVProgram.h */,
-				2B3173D90A95C283009E38F1 /* TVProgram.m */,
-				2B3173DA0A95C283009E38F1 /* TVProgramDocument.h */,
-				2B3173DB0A95C283009E38F1 /* TVProgramDocument.m */,
-				2B3173DC0A95C283009E38F1 /* TVTuner.h */,
-				2B3173DD0A95C283009E38F1 /* TVTuner.m */,
-				2B1341760A976362003EDD70 /* SourcesTableDelegate.h */,
-				2B1341770A976362003EDD70 /* SourcesTableDelegate.m */,
+				2BD00F6B0B1A060300F27EAF /* Controllers */,
+				2BD00F6C0B1A062500F27EAF /* Custom Views */,
+				2BD00F6F0B1A066300F27EAF /* Model Objects */,
+				2BD00F6D0B1A063600F27EAF /* Data Transformers */,
+				2BD00F6E0B1A064200F27EAF /* Additions */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -550,6 +529,8 @@
 				2B31743E0A95C441009E38F1 /* SmartFolderLarge.tiff */,
 				2B31743F0A95C441009E38F1 /* SmartFolderSmall.tiff */,
 				2B3174400A95C441009E38F1 /* SplitterHandle.tiff */,
+				2BD00E4A0B19D38A00F27EAF /* splitview-grip.tif */,
+				2BD00E4B0B19D38A00F27EAF /* splitview-bar.tif */,
 			);
 			name = "Interface images";
 			sourceTree = "<group>";
@@ -624,6 +605,85 @@
 				2B3176BA0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript */,
 			);
 			name = Scripts;
+			sourceTree = "<group>";
+		};
+		2BD00F6B0B1A060300F27EAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173B70A95C283009E38F1 /* AboutController.h */,
+				2B3173B80A95C283009E38F1 /* AboutController.m */,
+				2B3173C70A95C283009E38F1 /* PreferencesController.h */,
+				2B3173C80A95C283009E38F1 /* PreferencesController.m */,
+				2B3173C90A95C283009E38F1 /* ProgramArrayController.h */,
+				2B3173CA0A95C283009E38F1 /* ProgramArrayController.m */,
+				2B3173CF0A95C283009E38F1 /* ThinSplitViewDelegate.h */,
+				2B3173D00A95C283009E38F1 /* ThinSplitViewDelegate.m */,
+				2B3173D40A95C283009E38F1 /* TVController.h */,
+				2B3173D50A95C283009E38F1 /* TVController.m */,
+				2B1341760A976362003EDD70 /* SourcesTableDelegate.h */,
+				2B1341770A976362003EDD70 /* SourcesTableDelegate.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2BD00F6C0B1A062500F27EAF /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */,
+				2B1340940A975190003EDD70 /* CPVerticalAlignedCell.m */,
+				2B3173BA0A95C283009E38F1 /* HyperLinkTextField.h */,
+				2B3173BB0A95C283009E38F1 /* HyperLinkTextField.m */,
+				2B3173CB0A95C283009E38F1 /* ProgramsPrintView.h */,
+				2B3173CC0A95C283009E38F1 /* ProgramsPrintView.m */,
+				2B3173CD0A95C283009E38F1 /* ThinSplitView.h */,
+				2B3173CE0A95C283009E38F1 /* ThinSplitView.m */,
+				2BD00DAE0B19C51F00F27EAF /* FlatColorView.h */,
+				2BD00DAF0B19C51F00F27EAF /* FlatColorView.m */,
+				2BD00E230B19D2F600F27EAF /* ELSplitView.h */,
+				2BD00E220B19D2F600F27EAF /* ELSplitView.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2BD00F6D0B1A063600F27EAF /* Data Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173BF0A95C283009E38F1 /* MyPathTransformer.h */,
+				2B3173C00A95C283009E38F1 /* MyPathTransformer.m */,
+				2B3173D10A95C283009E38F1 /* TimeTransformer.h */,
+				2B3173D20A95C283009E38F1 /* TimeTransformer.m */,
+			);
+			name = "Data Transformers";
+			sourceTree = "<group>";
+		};
+		2BD00F6E0B1A064200F27EAF /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173C10A95C283009E38F1 /* NSArray+TVUtils.h */,
+				2B3173C20A95C283009E38F1 /* NSArray+TVUtils.m */,
+				2B3173C30A95C283009E38F1 /* NSString+SFHFUtils.h */,
+				2B3173C40A95C283009E38F1 /* NSString+SFHFUtils.m */,
+				2B3173C50A95C283009E38F1 /* NSString+TVUtils.h */,
+				2B3173C60A95C283009E38F1 /* NSString+TVUtils.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		2BD00F6F0B1A066300F27EAF /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173BC0A95C283009E38F1 /* IMDBClient.h */,
+				2B3173BD0A95C283009E38F1 /* IMDBClient.m */,
+				2B3173D60A95C283009E38F1 /* TVGuide.h */,
+				2B3173D70A95C283009E38F1 /* TVGuide.m */,
+				2B3173D80A95C283009E38F1 /* TVProgram.h */,
+				2B3173D90A95C283009E38F1 /* TVProgram.m */,
+				2B3173DA0A95C283009E38F1 /* TVProgramDocument.h */,
+				2B3173DB0A95C283009E38F1 /* TVProgramDocument.m */,
+				2B3173DC0A95C283009E38F1 /* TVTuner.h */,
+				2B3173DD0A95C283009E38F1 /* TVTuner.m */,
+			);
+			name = "Model Objects";
 			sourceTree = "<group>";
 		};
 		2BFE01F60A93622800246EA1 /* Nib Files */ = {
@@ -792,6 +852,8 @@
 				2B3174690A95C49C009E38F1 /* icon_visa.gif in Resources */,
 				2B31746A0A95C49C009E38F1 /* paypal.gif in Resources */,
 				2B3177CF0A95DB5C009E38F1 /* onair.tiff in Resources */,
+				2BD00E4C0B19D38A00F27EAF /* splitview-grip.tif in Resources */,
+				2BD00E4D0B19D38A00F27EAF /* splitview-bar.tif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +911,8 @@
 				2B3174780A95C536009E38F1 /* NSString+TVUtils.m in Sources */,
 				2B1340960A975190003EDD70 /* CPVerticalAlignedCell.m in Sources */,
 				2B1341790A976362003EDD70 /* SourcesTableDelegate.m in Sources */,
+				2BD00DB10B19C51F00F27EAF /* FlatColorView.m in Sources */,
+				2BD00E240B19D2F600F27EAF /* ELSplitView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

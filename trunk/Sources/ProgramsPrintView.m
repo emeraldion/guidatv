@@ -70,19 +70,19 @@
 			TVProgram *prog = [programs objectAtIndex:i];
 			
 			// Icon, on the left
-			NSImage *chanImg = [prog channelImg];
+			NSImage *chanImg = [[prog channelImg] copy];
 			[chanImg setFlipped:YES];
 			NSRect srcRect = NSMakeRect(0.0,
 										0.0,
-										ICON_WIDTH,
-										ICON_WIDTH);
+										[chanImg size].width,
+										[chanImg size].height);
 			NSRect iconRect = NSMakeRect(lineRect.origin.x + PADDING,
 										 lineRect.origin.y + (lineRect.size.height - ICON_WIDTH) / 2,
 										 ICON_WIDTH,
 										 ICON_WIDTH);
 			[chanImg drawInRect:iconRect
 					   fromRect:srcRect
-					  operation:NSCompositeHighlight//NSCompositeSourceOver
+					  operation:NSCompositeSourceOver
 					   fraction:1.0];
 			
 			// Title, on the upper left
@@ -120,6 +120,7 @@ withAttributes:dateAttributes];
 			[[prog genre] drawInRect:genreRect
 					  withAttributes:genreAttributes];
 			
+			[chanImg release];
 		}
 	}
 }

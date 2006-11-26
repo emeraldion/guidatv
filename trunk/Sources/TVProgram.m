@@ -319,6 +319,7 @@ static NSString *RESULTS_END = @"<br><br>";
 		int start = [bodyString rangeOfString:RESULTS_START].location + [RESULTS_START length];
 		int end = [bodyString rangeOfString:RESULTS_END options:NSBackwardsSearch].location;
 		[self setReview:[bodyString substringWithRange:NSMakeRange(start, end - start)]];
+		[[TVGuide sharedInstance] saveProgram:self];
 	}
 }
 
@@ -334,7 +335,8 @@ static NSString *RESULTS_END = @"<br><br>";
 
 - (void)movieOverviewDidBecomeAvailable:(NSString *)urlString
 {
-	[self setIMDBURLString:urlString]; 
+	[self setIMDBURLString:urlString];
+	[[TVGuide sharedInstance] saveProgram:self];
 }
 
 #pragma mark === Other ===
