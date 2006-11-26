@@ -1,8 +1,8 @@
 //
-//  NSString+TVUtils.m
+//  FlatColorView.m
 //  GuidaTV
 //
-//  Created by delphine on 16-06-2006.
+//  Created by delphine on 26-11-2006.
 //  Copyright 2006 Claudio Procida. All rights reserved.
 //  http://www.emeraldion.it
 //
@@ -20,21 +20,40 @@
 // claudio@emeraldion.it
 //
 
-#import "NSString+TVUtils.h"
+
+#import "FlatColorView.h"
 
 
-@implementation NSString (TVUtils)
+@implementation FlatColorView
 
-- (NSString*) escapedString
+- (id)initWithFrame:(NSRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setBgColor:[NSColor whiteColor]];
+    }
+    return self;
+}
+
+- (void)awakeFromNib
 {
-	NSMutableString* escaped = [[self mutableCopy] autorelease];
-	[escaped replaceOccurrencesOfString: @"&#039;" withString: @"'"  
-								options: 0 range: NSMakeRange (0, [escaped length])];
-	[escaped replaceOccurrencesOfString: @"&#034;" withString: @"\""  
-								options: 0 range: NSMakeRange (0, [escaped length])];
-	[escaped replaceOccurrencesOfString: @"&amp;" withString: @"&"  
-								options: 0 range: NSMakeRange (0, [escaped length])];
-	return [escaped copy];
+	[self setBgColor:[NSColor whiteColor]];
+}
+
+- (void)drawRect:(NSRect)rect {
+
+	[bgColor set];
+	NSRectFill(rect);
+}
+
+- (NSColor *)bgColor
+{
+	return bgColor;
+}
+- (void)setBgColor:(NSColor *)col
+{
+	[col retain];
+	[bgColor release];
+	bgColor = col;
 }
 
 @end

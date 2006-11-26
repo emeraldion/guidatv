@@ -45,13 +45,10 @@
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
-	NSLog(@"windowControllerDidLoadNib:");
-
 	[super windowControllerDidLoadNib:aController];
 }
 
 - (NSString *)windowNibName {
-	NSLog(@"TVProgramDocument");
     // Implement this to return a nib to load OR implement -makeWindowControllers to manually create your controllers.
     return @"TVProgramDocument";
 }
@@ -76,6 +73,7 @@
 	else
 	{
 		[self setProgram:pr];
+		[programController setContent:pr];
 		return YES;
 	}
 }

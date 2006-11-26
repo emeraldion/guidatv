@@ -52,6 +52,8 @@ Boolean GetMetadataForFile(void* thisInterface,
 											  forKey:(NSString *)kMDItemDueDate];
 		[(NSMutableDictionary *)attributes setObject:[program title]
 											  forKey:(NSString *)kMDItemTitle];
+		[(NSMutableDictionary *)attributes setObject:[program review]
+											  forKey:(NSString *)kMDItemDescription];
 	}
 	[pool release];
 	

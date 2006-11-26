@@ -1,8 +1,8 @@
 //
-//  NSString+TVUtils.m
+//  FlatColorView.h
 //  GuidaTV
 //
-//  Created by delphine on 16-06-2006.
+//  Created by delphine on 26-11-2006.
 //  Copyright 2006 Claudio Procida. All rights reserved.
 //  http://www.emeraldion.it
 //
@@ -20,21 +20,15 @@
 // claudio@emeraldion.it
 //
 
-#import "NSString+TVUtils.h"
+
+#import <Cocoa/Cocoa.h>
 
 
-@implementation NSString (TVUtils)
-
-- (NSString*) escapedString
-{
-	NSMutableString* escaped = [[self mutableCopy] autorelease];
-	[escaped replaceOccurrencesOfString: @"&#039;" withString: @"'"  
-								options: 0 range: NSMakeRange (0, [escaped length])];
-	[escaped replaceOccurrencesOfString: @"&#034;" withString: @"\""  
-								options: 0 range: NSMakeRange (0, [escaped length])];
-	[escaped replaceOccurrencesOfString: @"&amp;" withString: @"&"  
-								options: 0 range: NSMakeRange (0, [escaped length])];
-	return [escaped copy];
+@interface FlatColorView : NSView {
+	NSColor *bgColor;
 }
+
+- (NSColor *)bgColor;
+- (void)setBgColor:(NSColor *)col;
 
 @end

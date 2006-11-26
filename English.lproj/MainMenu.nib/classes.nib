@@ -1,7 +1,9 @@
 {
     IBClasses = (
         {CLASS = BlueView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = ELSplitView; LANGUAGE = ObjC; SUPERCLASS = NSSplitView; }, 
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FlatColorView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
         {CLASS = HyperLinkTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
         {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
         {
@@ -30,6 +32,7 @@
                 nextDay = id; 
                 nextTimeslot = id; 
                 nowOnAir = id; 
+                openDocument = id; 
                 previousDay = id; 
                 previousTimeslot = id; 
                 primeTime = id; 
@@ -38,7 +41,6 @@
                 showPreferencesPanel = id; 
                 toggleAlreadyDonated = id; 
                 toggleControls = id; 
-                toggleDrawer = id; 
                 tune = id; 
                 updateDayThenTune = id; 
                 webSite = id; 
@@ -51,7 +53,6 @@
                 dayMenu = NSPopUpButton; 
                 daysController = NSArrayController; 
                 donateSheet = NSWindow; 
-                drawer = id; 
                 guide = TVGuide; 
                 hourMenu = NSPopUpButton; 
                 hoursController = NSArrayController; 

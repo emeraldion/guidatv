@@ -91,7 +91,8 @@ static int TVSetReminder = 1;
     [self initializeToolbar];
 	
 	[table setTarget:self];
-	[table setDoubleAction:@selector(toggleDrawer:)];
+	//[table setDoubleAction:@selector(toggleDrawer:)];
+	[table setDoubleAction:@selector(openDocument:)];
 	/**
 		* FIXME: find a way to set up the Program Document as next responder
 	 */
@@ -165,11 +166,6 @@ static int TVSetReminder = 1;
 		preferencesController = [[PreferencesController alloc] init];
 	}
 	[preferencesController showWindow:self];
-}
-
-- (IBAction)toggleDrawer:(id)sender
-{
-	[drawer toggle:sender];
 }
 
 - (IBAction)programEditorFor:(id)sender
@@ -282,11 +278,11 @@ static int TVSetReminder = 1;
 
 - (IBAction) toggleControls:(id)sender
 { 
+	NSView *firstView = [[[table superview] superview] superview];
+
 	if (NSClassFromString(@"NSViewAnimation"))
 	{
 		// Tiger and above
-		
-		NSView *firstView = [[table superview] superview];
 		
 		NSViewAnimation *theAnim; 
 		NSRect firstViewFrame; 
@@ -338,7 +334,6 @@ static int TVSetReminder = 1;
 	}
 	else
 	{
-		NSView *firstView = [[table superview] superview];		
 		if (controlsVisible)
 		{
 			NSRect _frame = [firstView frame];
@@ -356,6 +351,17 @@ static int TVSetReminder = 1;
 	}
 	controlsVisible = !controlsVisible;
 } 
+
+- (IBAction) openDocument:(id)sender
+{
+	TVProgram *pr = [[programsController selectedObjects] objectAtIndex:0];
+	TVProgramDocument *doc = [[TVProgramDocument alloc] init];
+	//[doc setFileURL:[NSURL URLWithString:[@"file:///" stringByAppendingString:[[TVGuide sharedInstance] pathForProgram:pr]]]];
+	[doc makeWindowControllers];
+	[doc setProgram:pr];
+	[doc setFileName:[[TVGuide sharedInstance] pathForProgram:pr]];
+	[doc showWindows];
+}
 
 - (IBAction)print:(id)sender
 {
@@ -448,15 +454,7 @@ static int TVSetReminder = 1;
     NSToolbarItem *toolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier:itemIdent];
 	
     [toolbarItem autorelease];
-	if ([itemIdent isEqual:DetailsToolbarItemIdentifier]) { // a basic button item
-        [toolbarItem setLabel: NSLocalizedString(@"Details", @"Details")];
-        [toolbarItem setPaletteLabel: NSLocalizedString(@"Details", @"Details")];
-        [toolbarItem setToolTip:NSLocalizedString(@"Details", @"Details")];
-        [toolbarItem setImage:[NSImage imageNamed: @"inspectorButton"]];
-        [toolbarItem setTarget: drawer];
-        [toolbarItem setAction: @selector(toggle:)];
-    }
-    else if ([itemIdent isEqual:TuneToolbarItemIdentifier]) { // a basic button item
+	if ([itemIdent isEqual:TuneToolbarItemIdentifier]) { // a basic button item
         [toolbarItem setLabel: NSLocalizedString(@"Fetch Programs", @"Fetch Programs")];
         [toolbarItem setPaletteLabel: NSLocalizedString(@"Fetch Programs", @"Fetch Programs")];
         [toolbarItem setToolTip:NSLocalizedString(@"Fetch Programs", @"Fetch Programs")];
@@ -504,17 +502,18 @@ static int TVSetReminder = 1;
 - (NSArray *)toolbarDefaultItemIdentifiers:(NSToolbar *)toolbar
 { // return an array of the items found in the default toolbar
     return [NSArray arrayWithObjects:
-		DetailsToolbarItemIdentifier, TuneToolbarItemIdentifier,
+		TuneToolbarItemIdentifier,
 		iCalToolbarItemIdentifier, primeTimeToolbarItemIdentifier,
 		nowOnAirToolbarItemIdentifier,
+		SearchToolbarItemIdentifier,
         NSToolbarFlexibleSpaceItemIdentifier,
-        NSToolbarCustomizeToolbarItemIdentifier, nil];
+        NSToolbarPrintItemIdentifier, nil];
 }
 
 - (NSArray *)toolbarAllowedItemIdentifiers:(NSToolbar *)toolbar
 { // return an array of all the items that can be put in the toolbar
     return [NSArray arrayWithObjects:
-		DetailsToolbarItemIdentifier, TuneToolbarItemIdentifier,
+		TuneToolbarItemIdentifier,
 		iCalToolbarItemIdentifier, primeTimeToolbarItemIdentifier,
 		nowOnAirToolbarItemIdentifier, SearchToolbarItemIdentifier,
         NSToolbarPrintItemIdentifier, NSToolbarShowColorsItemIdentifier,
@@ -549,7 +548,7 @@ static int TVSetReminder = 1;
 		[[toolbarItem itemIdentifier] isEqual:TuneToolbarItemIdentifier]) {
         ret = YES;
     }
-	else if ([[toolbarItem itemIdentifier] isEqual:DetailsToolbarItemIdentifier] ||
+	else if (//[[toolbarItem itemIdentifier] isEqual:DetailsToolbarItemIdentifier] ||
 			 [[toolbarItem itemIdentifier] isEqual:iCalToolbarItemIdentifier]) {
 		ret = ([[programsController selectedObjects] count] > 0);
 	}

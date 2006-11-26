@@ -46,7 +46,6 @@ extern NSString *TVTunerSatellite;
 
 @interface TVController : NSObject <TVConsumer>
 {
-	IBOutlet id drawer;
 	IBOutlet id table;
 	IBOutlet id sourcestable;
 	IBOutlet id window;
@@ -71,7 +70,6 @@ extern NSString *TVTunerSatellite;
 }
 
 - (IBAction) showPreferencesPanel:(id)sender;
-- (IBAction) toggleDrawer:(id)sender;
 - (IBAction) updateDayThenTune:(id)sender;
 - (IBAction) tune:(id)sender;
 - (IBAction) forceTune:(id)sender;
@@ -84,6 +82,7 @@ extern NSString *TVTunerSatellite;
 - (IBAction) primeTime:(id)sender;
 - (IBAction) nowOnAir:(id)sender;
 - (IBAction) toggleControls:(id)sender;
+- (IBAction) openDocument:(id)sender;
 
 // Data export
 
