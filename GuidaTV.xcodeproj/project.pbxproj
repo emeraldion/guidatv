@@ -146,6 +146,7 @@
 		2BD00E250B19D2F600F27EAF /* ELSplitView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BD00E230B19D2F600F27EAF /* ELSplitView.h */; };
 		2BD00E4C0B19D38A00F27EAF /* splitview-grip.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2BD00E4A0B19D38A00F27EAF /* splitview-grip.tif */; };
 		2BD00E4D0B19D38A00F27EAF /* splitview-bar.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2BD00E4B0B19D38A00F27EAF /* splitview-bar.tif */; };
+		2BE29C660BF515F7005A5A6D /* GradientTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE29C640BF515F7005A5A6D /* GradientTableView.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -208,15 +209,15 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = CPVerticalAlignedCell.h; path = Sources/CPVerticalAlignedCell.h; sourceTree = "<group>"; };
-		2B1340940A975190003EDD70 /* CPVerticalAlignedCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = CPVerticalAlignedCell.m; path = Sources/CPVerticalAlignedCell.m; sourceTree = "<group>"; };
+		2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CPVerticalAlignedCell.h; sourceTree = "<group>"; };
+		2B1340940A975190003EDD70 /* CPVerticalAlignedCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CPVerticalAlignedCell.m; sourceTree = "<group>"; };
 		2B1341760A976362003EDD70 /* SourcesTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SourcesTableDelegate.h; path = Sources/SourcesTableDelegate.h; sourceTree = "<group>"; };
 		2B1341770A976362003EDD70 /* SourcesTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SourcesTableDelegate.m; path = Sources/SourcesTableDelegate.m; sourceTree = "<group>"; };
 		2B3173B70A95C283009E38F1 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = AboutController.h; path = Sources/AboutController.h; sourceTree = "<group>"; };
 		2B3173B80A95C283009E38F1 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = AboutController.m; path = Sources/AboutController.m; sourceTree = "<group>"; };
 		2B3173B90A95C283009E38F1 /* GuidaTV_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GuidaTV_Prefix.pch; path = Sources/GuidaTV_Prefix.pch; sourceTree = "<group>"; };
-		2B3173BA0A95C283009E38F1 /* HyperLinkTextField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HyperLinkTextField.h; path = Sources/HyperLinkTextField.h; sourceTree = "<group>"; };
-		2B3173BB0A95C283009E38F1 /* HyperLinkTextField.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = HyperLinkTextField.m; path = Sources/HyperLinkTextField.m; sourceTree = "<group>"; };
+		2B3173BA0A95C283009E38F1 /* HyperLinkTextField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = HyperLinkTextField.h; sourceTree = "<group>"; };
+		2B3173BB0A95C283009E38F1 /* HyperLinkTextField.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = HyperLinkTextField.m; sourceTree = "<group>"; };
 		2B3173BC0A95C283009E38F1 /* IMDBClient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = IMDBClient.h; path = Sources/IMDBClient.h; sourceTree = "<group>"; };
 		2B3173BD0A95C283009E38F1 /* IMDBClient.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = IMDBClient.m; path = Sources/IMDBClient.m; sourceTree = "<group>"; };
 		2B3173BE0A95C283009E38F1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/main.m; sourceTree = "<group>"; };
@@ -232,10 +233,10 @@
 		2B3173C80A95C283009E38F1 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = PreferencesController.m; path = Sources/PreferencesController.m; sourceTree = "<group>"; };
 		2B3173C90A95C283009E38F1 /* ProgramArrayController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ProgramArrayController.h; path = Sources/ProgramArrayController.h; sourceTree = "<group>"; };
 		2B3173CA0A95C283009E38F1 /* ProgramArrayController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ProgramArrayController.m; path = Sources/ProgramArrayController.m; sourceTree = "<group>"; };
-		2B3173CB0A95C283009E38F1 /* ProgramsPrintView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ProgramsPrintView.h; path = Sources/ProgramsPrintView.h; sourceTree = "<group>"; };
-		2B3173CC0A95C283009E38F1 /* ProgramsPrintView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ProgramsPrintView.m; path = Sources/ProgramsPrintView.m; sourceTree = "<group>"; };
-		2B3173CD0A95C283009E38F1 /* ThinSplitView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ThinSplitView.h; path = Sources/ThinSplitView.h; sourceTree = "<group>"; };
-		2B3173CE0A95C283009E38F1 /* ThinSplitView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ThinSplitView.m; path = Sources/ThinSplitView.m; sourceTree = "<group>"; };
+		2B3173CB0A95C283009E38F1 /* ProgramsPrintView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ProgramsPrintView.h; sourceTree = "<group>"; };
+		2B3173CC0A95C283009E38F1 /* ProgramsPrintView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ProgramsPrintView.m; sourceTree = "<group>"; };
+		2B3173CD0A95C283009E38F1 /* ThinSplitView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ThinSplitView.h; sourceTree = "<group>"; };
+		2B3173CE0A95C283009E38F1 /* ThinSplitView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ThinSplitView.m; sourceTree = "<group>"; };
 		2B3173CF0A95C283009E38F1 /* ThinSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ThinSplitViewDelegate.h; path = Sources/ThinSplitViewDelegate.h; sourceTree = "<group>"; };
 		2B3173D00A95C283009E38F1 /* ThinSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ThinSplitViewDelegate.m; path = Sources/ThinSplitViewDelegate.m; sourceTree = "<group>"; };
 		2B3173D10A95C283009E38F1 /* TimeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TimeTransformer.h; path = Sources/TimeTransformer.h; sourceTree = "<group>"; };
@@ -340,13 +341,15 @@
 		2BB716060A3DBA35000BB181 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
 		2BB717030A3DE737000BB181 /* AppleScriptKit.sdef */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.sdef; name = AppleScriptKit.sdef; path = /System/Library/Frameworks/AppleScriptKit.framework/Versions/A/Resources/AppleScriptKit.sdef; sourceTree = "<absolute>"; };
 		2BCE83070A8F6B6A0027CBB4 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TVProgramDocument.nib; sourceTree = "<group>"; };
-		2BD00DAE0B19C51F00F27EAF /* FlatColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlatColorView.h; path = Sources/FlatColorView.h; sourceTree = "<group>"; };
-		2BD00DAF0B19C51F00F27EAF /* FlatColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlatColorView.m; path = Sources/FlatColorView.m; sourceTree = "<group>"; };
-		2BD00E220B19D2F600F27EAF /* ELSplitView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ELSplitView.m; path = Sources/ELSplitView.m; sourceTree = "<group>"; };
-		2BD00E230B19D2F600F27EAF /* ELSplitView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ELSplitView.h; path = Sources/ELSplitView.h; sourceTree = "<group>"; };
+		2BD00DAE0B19C51F00F27EAF /* FlatColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatColorView.h; sourceTree = "<group>"; };
+		2BD00DAF0B19C51F00F27EAF /* FlatColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatColorView.m; sourceTree = "<group>"; };
+		2BD00E220B19D2F600F27EAF /* ELSplitView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ELSplitView.m; sourceTree = "<group>"; };
+		2BD00E230B19D2F600F27EAF /* ELSplitView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ELSplitView.h; sourceTree = "<group>"; };
 		2BD00E4A0B19D38A00F27EAF /* splitview-grip.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "splitview-grip.tif"; path = "Images/splitview-grip.tif"; sourceTree = "<group>"; };
 		2BD00E4B0B19D38A00F27EAF /* splitview-bar.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "splitview-bar.tif"; path = "Images/splitview-bar.tif"; sourceTree = "<group>"; };
 		2BDEA5E40A97CEA3003CCAA1 /* Localizations */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Localizations; sourceTree = "<group>"; };
+		2BE29C630BF515F7005A5A6D /* GradientTableView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GradientTableView.h; sourceTree = "<group>"; };
+		2BE29C640BF515F7005A5A6D /* GradientTableView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GradientTableView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* GuidaTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuidaTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -384,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD00F6B0B1A060300F27EAF /* Controllers */,
-				2BD00F6C0B1A062500F27EAF /* Custom Views */,
+				2BD00F6C0B1A062500F27EAF /* Sources */,
 				2BD00F6F0B1A066300F27EAF /* Model Objects */,
 				2BD00F6D0B1A063600F27EAF /* Data Transformers */,
 				2BD00F6E0B1A064200F27EAF /* Additions */,
@@ -626,7 +629,7 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		2BD00F6C0B1A062500F27EAF /* Custom Views */ = {
+		2BD00F6C0B1A062500F27EAF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */,
@@ -641,8 +644,10 @@
 				2BD00DAF0B19C51F00F27EAF /* FlatColorView.m */,
 				2BD00E230B19D2F600F27EAF /* ELSplitView.h */,
 				2BD00E220B19D2F600F27EAF /* ELSplitView.m */,
+				2BE29C630BF515F7005A5A6D /* GradientTableView.h */,
+				2BE29C640BF515F7005A5A6D /* GradientTableView.m */,
 			);
-			name = "Custom Views";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		2BD00F6D0B1A063600F27EAF /* Data Transformers */ = {
@@ -913,6 +918,7 @@
 				2B1341790A976362003EDD70 /* SourcesTableDelegate.m in Sources */,
 				2BD00DB10B19C51F00F27EAF /* FlatColorView.m in Sources */,
 				2BD00E240B19D2F600F27EAF /* ELSplitView.m in Sources */,
+				2BE29C660BF515F7005A5A6D /* GradientTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -91,16 +91,12 @@ static int TVSetReminder = 1;
     [self initializeToolbar];
 	
 	[table setTarget:self];
-	//[table setDoubleAction:@selector(toggleDrawer:)];
+
 	[table setDoubleAction:@selector(openDocument:)];
-	/**
-		* FIXME: find a way to set up the Program Document as next responder
-	 */
-	//	[table setDoubleAction:@selector(programEditorFor:)];
-	[sourcestable setRowHeight:42.0];
-	NSTableColumn *column = [sourcestable tableColumnWithIdentifier:@"sourcename"];
-	[column setDataCell:[[CPVerticalAlignedCell alloc] init]];
-	
+
+	[[sourcestable tableColumnWithIdentifier:@"sourcename"] setDataCell:[[CPVerticalAlignedCell alloc] init]];
+	[sourcestable setUsesGradientSelection:YES];
+
 	if (!NSClassFromString(@"NSViewAnimation"))
 	{
 		// Give some ol'Aqua look
@@ -753,6 +749,68 @@ static int TVSetReminder = 1;
 	{
 		[self tune:nil];
 	}
+}
+
+@end
+
+@implementation TVController (NSSplitViewDelegate)
+
+/*
+- (void)splitView:(NSSplitView *)sender resizeSubviewsWithOldSize:(NSSize)oldSize
+{
+}
+*/
+
+- (float)splitView:(NSSplitView *)sender constrainMinCoordinate:(float)proposedCoord ofSubviewAt:(int)offset
+{
+	if (sender == hrzSplit)
+	{
+		switch (offset)
+		{
+			case 0:
+				return 112;
+		}
+	}
+	return proposedCoord;
+}
+
+- (float)splitView:(NSSplitView *)sender constrainMaxCoordinate:(float)proposedCoord ofSubviewAt:(int)offset
+{
+	if (sender == hrzSplit)
+	{
+		switch (offset)
+		{
+			case 0:
+				return [hrzSplit bounds].size.height - [hrzSplit dividerThickness] - 224;
+		}
+	}
+	return proposedCoord;
+}
+
+/*
+- (void)splitViewWillResizeSubviews:(NSNotification *)notification
+{
+}
+- (void)splitViewDidResizeSubviews:(NSNotification *)notification
+{
+}
+*/
+
+- (BOOL)splitView:(NSSplitView *)sender canCollapseSubview:(NSView *)subview
+{
+	if (sender == hrzSplit)
+	{
+		if (subview == [[hrzSplit subviews] objectAtIndex:1])
+		{
+			return YES;
+		}
+	}
+	return NO;
+}
+
+- (float)splitView:(NSSplitView *)splitView constrainSplitPosition:(float)proposedPosition ofSubviewAt:(int)index
+{
+	return proposedPosition;
 }
 
 @end
