@@ -61,12 +61,12 @@ extern NSString *TVTunerSatellite;
 	IBOutlet NSPopUpButton *dayMenu;
 	IBOutlet NSButton *alreadyDonated;
 	IBOutlet NSImageView *controlsBg;
+	IBOutlet NSSplitView *hrzSplit;
+	
 	PreferencesController *preferencesController;
 	NSToolbar *toolbar;
 	NSTimer *timer;
 	BOOL controlsVisible;
-//	NSArray *days;
-//	NSArray *hours;
 }
 
 - (IBAction) showPreferencesPanel:(id)sender;
