@@ -4,6 +4,7 @@
         {CLASS = ELSplitView; LANGUAGE = ObjC; SUPERCLASS = NSSplitView; }, 
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {CLASS = FlatColorView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = GradientTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
         {CLASS = HyperLinkTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
         {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
         {
@@ -56,6 +57,7 @@
                 guide = TVGuide; 
                 hourMenu = NSPopUpButton; 
                 hoursController = NSArrayController; 
+                hrzSplit = NSSplitView; 
                 icalsheet = NSWindow; 
                 programsController = ProgramArrayController; 
                 sourcesController = NSArrayController; 
