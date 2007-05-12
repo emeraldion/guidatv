@@ -55,7 +55,9 @@ var satchannels = {
 	"Studio Universal": 60,
 	"Sky Sport 1": 116,
 	"Sky Sport 2": 117,
-	"Sky Sport 3": 123	
+	"Sky Sport 3": 123,
+	"Fox Crime": 127,
+	"Sky Vivo": 128
 };
 
 var genres = {

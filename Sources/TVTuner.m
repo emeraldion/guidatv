@@ -222,6 +222,7 @@ extern int TVSatelliteSource;
 			bodyString = [NSString stringWithFormat:@"There were %d bytes of type %@",
 				[data length], contentType];
 		}
+		NSLog(@"bodyString:%@", bodyString);
 		
 		int start = [bodyString rangeOfString:RESULTS_START].location + [RESULTS_START length];
 		int end = [bodyString rangeOfString:RESULTS_END options:NSBackwardsSearch].location;
@@ -251,6 +252,7 @@ extern int TVSatelliteSource;
 												startDate:date];
 			[progs insertObject:prog
 						atIndex:k];
+			NSLog(@"prog:%@", prog);
 		}
 		
 		TVProgram *prev, *next;

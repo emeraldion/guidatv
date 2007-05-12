@@ -64,4 +64,7 @@
 - (void)fetchProgramsForDay:(NSString *)d hour:(NSString *)h source:(NSString *)s;
 - (void)fetchProgramsForDay:(NSString *)d hour:(NSString *)h source:(NSString *)s forceReload:(BOOL)force;
 
+- (void)fetchProgramsForDate:(NSCalendarDate *)date source:(TVTuner *)tuner;
+- (void)fetchProgramsForDate:(NSCalendarDate *)date source:(TVTuner *)tuner forceReload:(BOOL)force;
+
 @end

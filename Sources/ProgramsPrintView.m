@@ -66,8 +66,8 @@
 			if (i % 2 != 0)
 			{
 				NSRect altRect = lineRect;
-				altRect.origin.x += ICON_WIDTH + PADDING;
-				altRect.size.width -= ICON_WIDTH - PADDING;
+				altRect.origin.x += ICON_WIDTH + 2 * PADDING;
+				altRect.size.width -= ICON_WIDTH - 2 * PADDING;
 			
 				[[NSGraphicsContext currentContext] saveGraphicsState]; {
 					[[NSColor colorWithDeviceWhite:0.95 alpha:1.0] set];
