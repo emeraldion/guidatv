@@ -62,9 +62,18 @@
 		NSRect lineRect = [self rectForProgram:i];
 		if (NSIntersectsRect(rect, lineRect))
 		{
-			// Fill background of cell if needed
-			[(i % 2) ? [NSColor colorWithDeviceWhite:0.9 alpha:1.0] : [NSColor whiteColor] set];
-			[NSBezierPath fillRect:lineRect];
+			// Fill alternate background of cell if needed
+			if (i % 2 != 0)
+			{
+				NSRect altRect = lineRect;
+				altRect.origin.x += ICON_WIDTH + PADDING;
+				altRect.size.width -= ICON_WIDTH - PADDING;
+			
+				[[NSGraphicsContext currentContext] saveGraphicsState]; {
+					[[NSColor colorWithDeviceWhite:0.95 alpha:1.0] set];
+					[NSBezierPath fillRect:altRect];
+				} [[NSGraphicsContext currentContext] restoreGraphicsState];
+			}
 			
 			// Get current program to draw
 			TVProgram *prog = [programs objectAtIndex:i];

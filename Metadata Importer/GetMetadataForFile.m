@@ -30,8 +30,9 @@ Boolean GetMetadataForFile(void* thisInterface,
 						   CFMutableDictionaryRef attributes, 
 						   CFStringRef contentTypeUTI,
 						   CFStringRef pathToFile)
-{
+{	
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+
 	TVProgram *program = (TVProgram *)[NSKeyedUnarchiver unarchiveObjectWithFile:(NSString *)pathToFile];
 	if(program) 
 	{
@@ -48,12 +49,21 @@ Boolean GetMetadataForFile(void* thisInterface,
 		 ...
 		 */
 
-		[(NSMutableDictionary *)attributes setObject:[program startDate]
-											  forKey:(NSString *)kMDItemDueDate];
-		[(NSMutableDictionary *)attributes setObject:[program title]
-											  forKey:(NSString *)kMDItemTitle];
-		[(NSMutableDictionary *)attributes setObject:[program review]
-											  forKey:(NSString *)kMDItemDescription];
+		if ([program startDate] != nil)
+		{
+			[(NSMutableDictionary *)attributes setObject:[program startDate]
+												  forKey:(NSString *)kMDItemDueDate];
+		}
+		if ([program title] != nil)
+		{
+			[(NSMutableDictionary *)attributes setObject:[program title]
+												  forKey:(NSString *)kMDItemTitle];
+		}
+		if ([program review] != nil)
+		{
+			[(NSMutableDictionary *)attributes setObject:[program review]
+												  forKey:(NSString *)kMDItemDescription];
+		}
 	}
 	[pool release];
 	

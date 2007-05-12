@@ -21,9 +21,7 @@
 /* End PBXAppleScriptBuildPhase section */
 
 /* Begin PBXBuildFile section */
-		2B1340950A975190003EDD70 /* CPVerticalAlignedCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */; };
 		2B1340960A975190003EDD70 /* CPVerticalAlignedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1340940A975190003EDD70 /* CPVerticalAlignedCell.m */; };
-		2B1341780A976362003EDD70 /* SourcesTableDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B1341760A976362003EDD70 /* SourcesTableDelegate.h */; };
 		2B1341790A976362003EDD70 /* SourcesTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1341770A976362003EDD70 /* SourcesTableDelegate.m */; };
 		2B3173E20A95C2EA009E38F1 /* satellite-small.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173DE0A95C2EA009E38F1 /* satellite-small.tif */; };
 		2B3173E30A95C2EA009E38F1 /* satellite.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2B3173DF0A95C2EA009E38F1 /* satellite.tif */; };
@@ -113,8 +111,6 @@
 		2B31758F0A95C6E3009E38F1 /* CURLHandle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
 		2B3175900A95C6E3009E38F1 /* RBSplitView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749E0A95C6AA009E38F1 /* RBSplitView.framework */; };
 		2B3175910A95C6E3009E38F1 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749F0A95C6AA009E38F1 /* Sparkle.framework */; };
-		2B3175940A95C700009E38F1 /* CURLHandle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
-		2B3175970A95C70B009E38F1 /* CURLHandle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
 		2B3176BB0A95D554009E38F1 /* Add iCal reminder.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2B3176B90A95D554009E38F1 /* Add iCal reminder.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2B3176BC0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = 2B3176BA0A95D554009E38F1 /* Aggiungi promemoria iCal.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
 		2B3177CF0A95DB5C009E38F1 /* onair.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 2B3177CE0A95DB5C009E38F1 /* onair.tiff */; };
@@ -140,13 +136,18 @@
 		2BB716070A3DBA35000BB181 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB716060A3DBA35000BB181 /* AppleScriptKit.framework */; };
 		2BB717040A3DE737000BB181 /* AppleScriptKit.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 2BB717030A3DE737000BB181 /* AppleScriptKit.sdef */; };
 		2BCE836A0A8F6DF20027CBB4 /* TVProgramDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE83690A8F6DF20027CBB4 /* TVProgramDocument.nib */; };
-		2BD00DB00B19C51F00F27EAF /* FlatColorView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BD00DAE0B19C51F00F27EAF /* FlatColorView.h */; };
 		2BD00DB10B19C51F00F27EAF /* FlatColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD00DAF0B19C51F00F27EAF /* FlatColorView.m */; };
 		2BD00E240B19D2F600F27EAF /* ELSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD00E220B19D2F600F27EAF /* ELSplitView.m */; };
-		2BD00E250B19D2F600F27EAF /* ELSplitView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2BD00E230B19D2F600F27EAF /* ELSplitView.h */; };
 		2BD00E4C0B19D38A00F27EAF /* splitview-grip.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2BD00E4A0B19D38A00F27EAF /* splitview-grip.tif */; };
 		2BD00E4D0B19D38A00F27EAF /* splitview-bar.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2BD00E4B0B19D38A00F27EAF /* splitview-bar.tif */; };
 		2BE29C660BF515F7005A5A6D /* GradientTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE29C640BF515F7005A5A6D /* GradientTableView.m */; };
+		2BE2A47E0BF5D719005A5A6D /* MediasetPremiumTVTuner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A47C0BF5D719005A5A6D /* MediasetPremiumTVTuner.m */; };
+		2BE2A4840BF5D775005A5A6D /* VirgilioSpettacoliTVTuner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A4820BF5D775005A5A6D /* VirgilioSpettacoliTVTuner.m */; };
+		2BE2A4F00BF5EBD7005A5A6D /* TVProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173D90A95C283009E38F1 /* TVProgram.m */; };
+		2BE2A4FA0BF5EC02005A5A6D /* TVGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173D70A95C283009E38F1 /* TVGuide.m */; };
+		2BE39A660BF61D6500E0D47B /* CURLHandle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
+		2BE39A730BF61D6900E0D47B /* CURLHandle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B31749D0A95C6AA009E38F1 /* CURLHandle.framework */; };
+		2BE39A810BF61E3E00E0D47B /* IMDBClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3173BD0A95C283009E38F1 /* IMDBClient.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -179,7 +180,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B3175970A95C70B009E38F1 /* CURLHandle.framework in CopyFiles */,
+				2BE39A730BF61D6900E0D47B /* CURLHandle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,10 +195,6 @@
 				2B31758F0A95C6E3009E38F1 /* CURLHandle.framework in CopyFiles */,
 				2B3175900A95C6E3009E38F1 /* RBSplitView.framework in CopyFiles */,
 				2B3175910A95C6E3009E38F1 /* Sparkle.framework in CopyFiles */,
-				2B1340950A975190003EDD70 /* CPVerticalAlignedCell.h in CopyFiles */,
-				2B1341780A976362003EDD70 /* SourcesTableDelegate.h in CopyFiles */,
-				2BD00DB00B19C51F00F27EAF /* FlatColorView.h in CopyFiles */,
-				2BD00E250B19D2F600F27EAF /* ELSplitView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +247,8 @@
 		2B3173D90A95C283009E38F1 /* TVProgram.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TVProgram.m; path = Sources/TVProgram.m; sourceTree = "<group>"; };
 		2B3173DA0A95C283009E38F1 /* TVProgramDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TVProgramDocument.h; path = Sources/TVProgramDocument.h; sourceTree = "<group>"; };
 		2B3173DB0A95C283009E38F1 /* TVProgramDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TVProgramDocument.m; path = Sources/TVProgramDocument.m; sourceTree = "<group>"; };
-		2B3173DC0A95C283009E38F1 /* TVTuner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = TVTuner.h; path = Sources/TVTuner.h; sourceTree = "<group>"; };
-		2B3173DD0A95C283009E38F1 /* TVTuner.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TVTuner.m; path = Sources/TVTuner.m; sourceTree = "<group>"; };
+		2B3173DC0A95C283009E38F1 /* TVTuner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TVTuner.h; sourceTree = "<group>"; };
+		2B3173DD0A95C283009E38F1 /* TVTuner.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TVTuner.m; sourceTree = "<group>"; };
 		2B3173DE0A95C2EA009E38F1 /* satellite-small.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "satellite-small.tif"; path = "Images/satellite-small.tif"; sourceTree = "<group>"; };
 		2B3173DF0A95C2EA009E38F1 /* satellite.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = satellite.tif; path = Images/satellite.tif; sourceTree = "<group>"; };
 		2B3173E00A95C2EA009E38F1 /* terrestrial-small.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "terrestrial-small.tif"; path = "Images/terrestrial-small.tif"; sourceTree = "<group>"; };
@@ -350,6 +347,10 @@
 		2BDEA5E40A97CEA3003CCAA1 /* Localizations */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Localizations; sourceTree = "<group>"; };
 		2BE29C630BF515F7005A5A6D /* GradientTableView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GradientTableView.h; sourceTree = "<group>"; };
 		2BE29C640BF515F7005A5A6D /* GradientTableView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GradientTableView.m; sourceTree = "<group>"; };
+		2BE2A47B0BF5D719005A5A6D /* MediasetPremiumTVTuner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediasetPremiumTVTuner.h; sourceTree = "<group>"; };
+		2BE2A47C0BF5D719005A5A6D /* MediasetPremiumTVTuner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediasetPremiumTVTuner.m; sourceTree = "<group>"; };
+		2BE2A4810BF5D775005A5A6D /* VirgilioSpettacoliTVTuner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirgilioSpettacoliTVTuner.h; sourceTree = "<group>"; };
+		2BE2A4820BF5D775005A5A6D /* VirgilioSpettacoliTVTuner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirgilioSpettacoliTVTuner.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* GuidaTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuidaTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -359,7 +360,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3175940A95C700009E38F1 /* CURLHandle.framework in Frameworks */,
+				2BE39A660BF61D6500E0D47B /* CURLHandle.framework in Frameworks */,
 				2B7171220A92774B00CC708D /* Cocoa.framework in Frameworks */,
 				2B716FAD0A9269C900CC708D /* CoreFoundation.framework in Frameworks */,
 				2B716FAE0A9269C900CC708D /* CoreServices.framework in Frameworks */,
@@ -387,7 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD00F6B0B1A060300F27EAF /* Controllers */,
-				2BD00F6C0B1A062500F27EAF /* Sources */,
+				2BD00F6C0B1A062500F27EAF /* Custom Views */,
 				2BD00F6F0B1A066300F27EAF /* Model Objects */,
 				2BD00F6D0B1A063600F27EAF /* Data Transformers */,
 				2BD00F6E0B1A064200F27EAF /* Additions */,
@@ -613,6 +614,7 @@
 		2BD00F6B0B1A060300F27EAF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2BE2A4740BF5D6B2005A5A6D /* Tuners */,
 				2B3173B70A95C283009E38F1 /* AboutController.h */,
 				2B3173B80A95C283009E38F1 /* AboutController.m */,
 				2B3173C70A95C283009E38F1 /* PreferencesController.h */,
@@ -629,7 +631,7 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		2BD00F6C0B1A062500F27EAF /* Sources */ = {
+		2BD00F6C0B1A062500F27EAF /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
 				2B1340930A975190003EDD70 /* CPVerticalAlignedCell.h */,
@@ -647,6 +649,7 @@
 				2BE29C630BF515F7005A5A6D /* GradientTableView.h */,
 				2BE29C640BF515F7005A5A6D /* GradientTableView.m */,
 			);
+			name = "Custom Views";
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -685,10 +688,22 @@
 				2B3173D90A95C283009E38F1 /* TVProgram.m */,
 				2B3173DA0A95C283009E38F1 /* TVProgramDocument.h */,
 				2B3173DB0A95C283009E38F1 /* TVProgramDocument.m */,
-				2B3173DC0A95C283009E38F1 /* TVTuner.h */,
-				2B3173DD0A95C283009E38F1 /* TVTuner.m */,
 			);
 			name = "Model Objects";
+			sourceTree = "<group>";
+		};
+		2BE2A4740BF5D6B2005A5A6D /* Tuners */ = {
+			isa = PBXGroup;
+			children = (
+				2B3173DC0A95C283009E38F1 /* TVTuner.h */,
+				2B3173DD0A95C283009E38F1 /* TVTuner.m */,
+				2BE2A47B0BF5D719005A5A6D /* MediasetPremiumTVTuner.h */,
+				2BE2A47C0BF5D719005A5A6D /* MediasetPremiumTVTuner.m */,
+				2BE2A4810BF5D775005A5A6D /* VirgilioSpettacoliTVTuner.h */,
+				2BE2A4820BF5D775005A5A6D /* VirgilioSpettacoliTVTuner.m */,
+			);
+			name = Tuners;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		2BFE01F60A93622800246EA1 /* Nib Files */ = {
@@ -713,6 +728,7 @@
 				2B716EB00A92682C00CC708D /* Sources */,
 				2B716EB10A92682C00CC708D /* Frameworks */,
 				2B7171B30A9283FE00CC708D /* CopyFiles */,
+				2BE39AA30BF6205300E0D47B /* Change install name */,
 			);
 			buildRules = (
 			);
@@ -733,7 +749,6 @@
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				2BB50C5C0A39943F00BA7F59 /* CopyFiles */,
 				2B716FE30A926B1F00CC708D /* Copy MDImporter */,
-				2B7173140A93058200CC708D /* Change Install Name */,
 			);
 			buildRules = (
 			);
@@ -865,19 +880,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B7173140A93058200CC708D /* Change Install Name */ = {
+		2BE39AA30BF6205300E0D47B /* Change install name */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Change Install Name";
+			name = "Change install name";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#\n# This script changes the way CURLHandle is linked to the Spotlight\n# Metadata Importer to allow a Framework to be linked to a bundle\n#\n\ninstall_name_tool -change @executable_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/MacOS/${PRODUCT_NAME}\"\n\notool -L \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/MacOS/${PRODUCT_NAME}\"\n\ninstall_name_tool -id @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n\notool -D \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.app/Contents/Library/Spotlight/${PRODUCT_NAME}.mdimporter/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n";
+			shellScript = "#\n# This script changes the way CURLHandle is linked to the Spotlight\n# Metadata Importer to allow a Framework to be linked to a bundle\n#\n\ninstall_name_tool -change @executable_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.${WRAPPER_EXTENSION}/Contents/MacOS/${PRODUCT_NAME}\"\n\notool -L \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.${WRAPPER_EXTENSION}/Contents/MacOS/${PRODUCT_NAME}\"\n\ninstall_name_tool -id @loader_path/../Frameworks/CURLHandle.framework/Versions/A/CURLHandle \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.${WRAPPER_EXTENSION}/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n\notool -D \"${CONFIGURATION_BUILD_DIR}/${PRODUCT_NAME}.${WRAPPER_EXTENSION}/Contents/Frameworks/CURLHandle.framework/CURLHandle\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -888,6 +903,9 @@
 			files = (
 				2B7170210A926E1000CC708D /* GetMetadataForFile.m in Sources */,
 				2B7170220A926E1000CC708D /* main.c in Sources */,
+				2BE2A4F00BF5EBD7005A5A6D /* TVProgram.m in Sources */,
+				2BE2A4FA0BF5EC02005A5A6D /* TVGuide.m in Sources */,
+				2BE39A810BF61E3E00E0D47B /* IMDBClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,6 +937,8 @@
 				2BD00DB10B19C51F00F27EAF /* FlatColorView.m in Sources */,
 				2BD00E240B19D2F600F27EAF /* ELSplitView.m in Sources */,
 				2BE29C660BF515F7005A5A6D /* GradientTableView.m in Sources */,
+				2BE2A47E0BF5D719005A5A6D /* MediasetPremiumTVTuner.m in Sources */,
+				2BE2A4840BF5D775005A5A6D /* VirgilioSpettacoliTVTuner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -997,10 +1017,12 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/Metadata Importer\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/build\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/build\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1028,10 +1050,12 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/Metadata Importer\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/build\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/build\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;

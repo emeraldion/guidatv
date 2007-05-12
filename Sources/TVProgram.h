@@ -29,7 +29,7 @@ extern int TVProgramNoChannel;
 extern NSString *TVProgramNoGenre;
 extern int TVProgramMaxTitleLength;
 
-@interface TVProgram : NSObject <NSCoding, NSURLHandleClient, IMDBConsumer>
+@interface TVProgram : NSObject <NSCoding/*, NSURLHandleClient, IMDBConsumer*/>
 {
 
 	NSString *title;
@@ -82,7 +82,7 @@ extern int TVProgramMaxTitleLength;
 
 - (BOOL)onair;
 - (NSString *)description;
-- (NSImage *)onairImg;
+- (NSString *)onairImg;
 - (NSImage *)channelImg;
 
 @end

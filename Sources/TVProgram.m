@@ -57,8 +57,7 @@ static NSString *RESULTS_END = @"<br><br>";
 			channel:(int)aChannel
 		  startDate:(NSCalendarDate *)aDate
 {
-	[super init];
-	if (self != nil)
+	if (self = [super init])
 	{
 		[self setTitle:aTitle];
 		[self setGenre:aGenre];
@@ -81,18 +80,44 @@ static NSString *RESULTS_END = @"<br><br>";
 
 - (id)initWithCoder:(NSCoder *)coder
 {
-	[super init];
-	if (self != nil)
+	if (self = [super init])
 	{
-		[self setTitle:[coder decodeObjectForKey:@"title"]];
-		[self setGenre:[coder decodeObjectForKey:@"genre"]];
-		[self setChannel:[coder decodeIntForKey:@"channel"]];
-		[self setStartDate:[coder decodeObjectForKey:@"startDate"]];
-		[self setEndDate:[coder decodeObjectForKey:@"endDate"]];
-		[self setReview:[coder decodeObjectForKey:@"review"]];
-		[self setIMDBURLString:[coder decodeObjectForKey:@"IMDBURLstring"]];
-		[self setProgid:[coder decodeObjectForKey:@"progid"]];
-		[self setUserComments:[coder decodeObjectForKey:@"userComments"]];
+		if ([coder containsValueForKey:@"title"])
+		{
+			[self setTitle:[coder decodeObjectForKey:@"title"]];
+		}
+		if ([coder containsValueForKey:@"genre"])
+		{
+			[self setGenre:[coder decodeObjectForKey:@"genre"]];
+		}
+		if ([coder containsValueForKey:@"channel"])
+		{
+			[self setChannel:[coder decodeIntForKey:@"channel"]];
+		}
+		if ([coder containsValueForKey:@"startDate"])
+		{
+			[self setStartDate:[coder decodeObjectForKey:@"startDate"]];
+		}
+		if ([coder containsValueForKey:@"endDate"])
+		{
+			[self setEndDate:[coder decodeObjectForKey:@"endDate"]];
+		}
+		if ([coder containsValueForKey:@"review"])
+		{
+			[self setReview:[coder decodeObjectForKey:@"review"]];
+		}
+		if ([coder containsValueForKey:@"IMDBURLstring"])
+		{
+			[self setIMDBURLString:[coder decodeObjectForKey:@"IMDBURLstring"]];
+		}
+		if ([coder containsValueForKey:@"progid"])
+		{
+			[self setProgid:[coder decodeObjectForKey:@"progid"]];
+		}
+		if ([coder containsValueForKey:@"userComments"])
+		{
+			[self setUserComments:[coder decodeObjectForKey:@"userComments"]];
+		}
 	}
 	return self;
 }
@@ -219,7 +244,8 @@ static NSString *RESULTS_END = @"<br><br>";
 
 - (NSString *)IMDBURLString
 {
-	if ([IMDBURLString isEqual:TVProgramNoIMDBURL])
+
+	if ([IMDBURLString isEqual:TVProgramNoIMDBURL] && NSClassFromString(@"CURLHandle"))
 	{
 		if ([genre isEqual:@"Film"] ||
 			[genre isEqual:@"Serial"]) // FIXME
@@ -230,12 +256,14 @@ static NSString *RESULTS_END = @"<br><br>";
 		}
 		[self setIMDBURLString:nil];
 	}
+
 	return IMDBURLString;
 }
 
 - (NSString *)review
 {
-	if (!review)
+
+	if (!review && NSClassFromString(@"CURLHandle"))
 	{
 		NSURL *url;
 		NSString *urlString = @"http://spettacolo.alice.it/guidatv/cgi/index.cgi";
@@ -272,6 +300,7 @@ static NSString *RESULTS_END = @"<br><br>";
 		}
 		
 	}
+
 	return review;
 }
 
@@ -284,6 +313,7 @@ static NSString *RESULTS_END = @"<br><br>";
 {
 	return progid;
 }
+
 
 #pragma mark === URLHandle protocol methods ===
 
@@ -338,6 +368,7 @@ static NSString *RESULTS_END = @"<br><br>";
 	[self setIMDBURLString:urlString];
 	[[TVGuide sharedInstance] saveProgram:self];
 }
+
 
 #pragma mark === Other ===
 

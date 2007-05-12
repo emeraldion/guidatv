@@ -33,7 +33,6 @@
 
 @interface IMDBClient : NSObject <NSURLHandleClient>
 {
-	CURLHandle *mURLHandle;
 	id <IMDBConsumer> mConsumer;
 }
 
