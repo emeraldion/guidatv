@@ -298,4 +298,16 @@ TVGuide *tvGuideSharedInstance;
 	}	
 }
 
+- (void)fetchProgramsForDate:(NSCalendarDate *)date source:(TVTuner *)tuner
+{
+	[self fetchProgramsForDate:date
+						source:tuner
+				   forceReload:NO];
+}
+
+- (void)fetchProgramsForDate:(NSCalendarDate *)date source:(TVTuner *)tuner forceReload:(BOOL)force
+{
+	// Not implemented
+}
+
 @end
