@@ -37,6 +37,11 @@ static NSString *IMDBTitleAvailableMarker = @"http://imdb.com/title/";
 	return self;
 }
 
+- (void)dealloc
+{
+	[super dealloc];
+}
+
 + (IMDBClient *)client
 {
 	return [[[IMDBClient alloc] init] autorelease];

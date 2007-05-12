@@ -19,7 +19,12 @@
             LANGUAGE = ObjC; 
             SUPERCLASS = NSObject; 
         }, 
-        {CLASS = SourcesTableDelegate; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = SourcesTableDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {sourceNameColumn = NSTableColumn; }; 
+            SUPERCLASS = NSObject; 
+        }, 
         {
             ACTIONS = {
                 addReminder = id; 

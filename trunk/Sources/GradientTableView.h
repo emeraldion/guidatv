@@ -2,8 +2,8 @@
 //  GradientTableView.m
 //  GuidaTV
 //
-//  Created by delphine on 26-11-2006.
-//  Copyright 2006 Claudio Procida. All rights reserved.
+//  Created by delphine on 11-05-2007.
+//  Copyright 2007 Claudio Procida. All rights reserved.
 //  http://www.emeraldion.it
 //
 // This program is free software; you can redistribute it and/or modify

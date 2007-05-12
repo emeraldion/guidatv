@@ -1,9 +1,9 @@
 //
-//  SourcesTableDelegate.h
+//  MediasetPremiumTVTuner.h
 //  GuidaTV
 //
-//  Created by delphine on 19-08-2006.
-//  Copyright 2006 Claudio Procida. All rights reserved.
+//  Created by delphine on 12-05-2007.
+//  Copyright 2007 Claudio Procida - Emeraldion Lodge. All rights reserved.
 //  http://www.emeraldion.it
 //
 // This program is free software; you can redistribute it and/or modify
@@ -21,11 +21,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "TVTuner.h"
 
+@interface MediasetPremiumTVTuner : TVTuner {
 
-@interface SourcesTableDelegate : NSObject {
-
-	IBOutlet NSTableColumn *sourceNameColumn;
 }
 
 @end

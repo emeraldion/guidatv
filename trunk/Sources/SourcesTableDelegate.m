@@ -27,25 +27,30 @@
 
 - (void)tableView:(NSTableView *)tableView willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)tableColumn row:(int)row
 {
-	NSColor *fontColor;
-	NSColor *shadowColor;
-	if ([[tableView selectedRowIndexes] containsIndex:row] && ([tableView editedRow] != row))
+	/*
+	if (tableColumn == sourceNameColumn)
 	{
-		
-		fontColor = [NSColor whiteColor];
-		shadowColor = [NSColor colorWithDeviceRed:(127.0/255.0) green:(140.0/255.0) blue:(160.0/255.0) alpha:1.0];
+		NSColor *fontColor;
+		NSColor *shadowColor;
+		if ([[tableView selectedRowIndexes] containsIndex:row] && ([tableView editedRow] != row))
+		{
+			
+			fontColor = [NSColor whiteColor];
+			shadowColor = [NSColor colorWithDeviceRed:(127.0/255.0) green:(140.0/255.0) blue:(160.0/255.0) alpha:1.0];
+		}
+		else
+		{
+			fontColor = [NSColor blackColor];
+			shadowColor = nil;
+		}
+		[cell setTextColor:fontColor];
+		NSShadow *shadow = [[NSShadow alloc] init];
+		NSSize shadowOffset = { width: 1.0, height: -1.5};
+		[shadow setShadowOffset:shadowOffset];
+		[shadow setShadowColor:shadowColor];
+		[shadow set];	
 	}
-	else
-	{
-		fontColor = [NSColor blackColor];
-		shadowColor = nil;
-	}
-	[cell setTextColor:fontColor];
-	NSShadow *shadow = [[NSShadow alloc] init];
-	NSSize shadowOffset = { width: 1.0, height: -1.5};
-	[shadow setShadowOffset:shadowOffset];
-	[shadow setShadowColor:shadowColor];
-	[shadow set];	
+	*/
 }
 
 @end
