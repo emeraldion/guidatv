@@ -36,6 +36,8 @@ extern NSString *TVTunerSatellite;
 	int mBytesRetrievedSoFar;
 	NSString *status;
 	NSString *day;
+	NSString *label;
+	NSImage *icon;
 	id consumer;
 	BOOL _wait;
 }
@@ -52,6 +54,9 @@ extern NSString *TVTunerSatellite;
 
 - (void)setDay:(NSString *)day;
 - (NSString *)day;
+
+- (NSString *)label;
+- (NSImage *)icon;
 
 #pragma mark === TVConsumer provider methods ===
 

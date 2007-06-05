@@ -121,6 +121,12 @@ static int TVSetReminder = 1;
 			@"source",
 			nil],		
 		nil];
+	/*
+	NSArray *sources = [NSArray arrayWithObjects:[[[VirgilioSpettacoliTVTuner alloc] initWithMode:VSTerrestrialMode] autorelease],
+		[[[VirgilioSpettacoliTVTuner alloc] initWithMode:VSSatelliteMode] autorelease],
+		[[[MediasetPremiumTVTuner alloc] init] autorelease],
+		nil];
+	*/
 	[sourcesController setContent:sources];
 	
 	int h;

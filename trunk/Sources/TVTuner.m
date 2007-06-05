@@ -87,6 +87,15 @@ extern int TVSatelliteSource;
 	return day;
 }
 
+- (NSString *)label
+{
+	return label;
+}
+- (NSImage *)icon
+{
+	return icon;
+}
+
 #pragma mark === TVTuner methods ===
 
 - (void)fetchPrograms
