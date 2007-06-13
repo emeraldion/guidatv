@@ -1,17 +1,18 @@
 ﻿/**
  *	VersionChecker class
  *
- *	© Claudio Procida 2005
+ *	© Claudio Procida 2005-2007
+ *	http://www.emeraldion.it
  *
  *	Disclaimer
  *
- *	The GuidaTV Widget software (from now, the "Software") and the accompanying materials
+ *	The VersionChecker class software (from now, the "Software") and the accompanying materials
  *	are provided “AS IS” without warranty of any kind. IN NO EVENT SHALL THE AUTHOR(S) BE
  *	LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
  *	INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN
  *	IF THE AUTHOR(S) HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. The entire risk as to
  *	the results and performance of this software is assumed by you. If the software is
- *	defective, you, and not Claudio Procida, assume the entire cost of all necessary servicing,
+ *	defective, you, and not the author, assume the entire cost of all necessary servicing,
  *	repairs and corrections. If you do not agree to these terms and conditions, you may not
  *	install or use this software.
  */
@@ -37,7 +38,41 @@ var VC_ASYNC = false,
 /**
  *	Functions
  */
+
+/**
+ *	Compares two version numbers, returning true if the receiver is older
+ *
+ *	"1.2.3".olderThan("1.2") => false
+ *	"1.2.3".olderThan("1.3") => true
+ *	"1.2".olderThan("1.2.3") => true
+ *	"1.3".olderThan("1.2.3") => false
+ */
+String.prototype.olderThan = function(other)
+{
+	var myVersionNumbers = this.split("."),
+		otherVersionNumbers = other.split(".");
+
+	var len = Math.max(myVersionNumbers.length, otherVersionNumbers.length);
+
+	for (var i = 0; i < len; i++)
+	{
+		if (!myVersionNumbers[i])
+			myVersionNumbers[i] = 0;
+		if (!otherVersionNumbers[i])
+			otherVersionNumbers[i] = 0;
+	}
 	
+	for (var i = 0; i < len; i++)
+	{
+		// Compare corresponding version numbers
+		if (myVersionNumbers[i] < otherVersionNumbers[i])
+			return true;
+		else if (myVersionNumbers[i] > otherVersionNumbers[i])
+			return false;
+	}
+	return false;
+};
+
 function VersionChecker() {
 
 	vc_version = trim(getWidgetProperty("CFBundleVersion"));
@@ -49,26 +84,23 @@ function VersionChecker() {
 	this.url = VC_URL + vc_name;
 
 
-	this.callback = function() {
-		if (req.readyState == 4) {
-			if (req.status == 200) {
-				vc_latestVersion = parseFloat(req.responseText);
-				//__DEBUG("vc_latestVersion");
-				vc_onUpdate(vc_latestVersion > vc_version, vc_name, vc_latestVersion);
-			}
-			else {
-				alert("No response from server.");
-			}
-		}
-	};
-	
 	this.onUpdateCall = function (action) {
 		vc_onUpdate = action;
 	};
 
 	this.checkUpdate = function () {
 		req = new XMLHttpRequest();
-		req.onreadystatechange = this.callback;
+		req.onreadystatechange = function() {
+			if (req.readyState == 4) {
+				if (req.status == 200) {
+					vc_latestVersion = req.responseText;
+					vc_onUpdate(vc_version.olderThan(vc_latestVersion), vc_name, vc_latestVersion);
+				}
+				else {
+					alert("No response from server.");
+				}
+			}
+		};
 		req.open(this.method, this.url, this.async);
 		req.send(null);
 	};
@@ -77,17 +109,14 @@ function VersionChecker() {
 
 function defaultAction(updateAvailable, item, version) {
 	if (updateAvailable) {
-		alert("Update available");
-		showObj("onscreen");
+		alert("Update available!");
 	}
 }
 
 function getWidgetProperty(property) { // retrieves property from Info.plist file
 	command = '/bin/sh -c "defaults read \'`pwd`/Info\' ' + property + '"';
-	//__DEBUG("command");
 	if (window.widget) {
 		oString = widget.system(command, null).outputString;
-		//__DEBUG("oString");
 		return oString;
 	}
 	else {
@@ -100,10 +129,5 @@ function getName(identifier) { // extracts mywidget from com.domain.mywidget
 }
 
 function trim(str) { // removes garbage from string str
-	str = new String(str);
-	return str.replace(/[\r\n\s]+/g, "");
-}
-
-function __DEBUG(variable) {
-	alert(variable + ": " + eval(variable));
+	return (new String(str)).replace(/[\r\n\s]+/g, "");
 }

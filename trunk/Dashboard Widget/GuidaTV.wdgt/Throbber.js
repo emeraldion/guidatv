@@ -1,7 +1,7 @@
 ﻿/**
  *	Throbber class
  *
- *	© Claudio Procida 2005
+ *	© Claudio Procida 2005-2007
  *
  *	Disclaimer
  *
@@ -11,7 +11,7 @@
  *	INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN
  *	IF THE AUTHOR(S) HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. The entire risk as to
  *	the results and performance of this software is assumed by you. If the software is
- *	defective, you, and not Claudio Procida, assume the entire cost of all necessary servicing,
+ *	defective, you, and not the author, assume the entire cost of all necessary servicing,
  *	repairs and corrections. If you do not agree to these terms and conditions, you may not
  *	install or use this software.
  */

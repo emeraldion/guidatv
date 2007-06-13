@@ -1,19 +1,22 @@
 ﻿/**
  *	GuidaTV Widget
  *
- *	© Claudio Procida 2005
+ *	Copyright 2005-2007 Claudio Procida. All rights reserved.
+ *	http://www.emeraldion.it
+ * 
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ * 
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ * 
+ *  Bug fixes, suggestions and comments should be sent to:
+ *  claudio@emeraldion.it
  *
- *	Disclaimer
- *
- *	The GuidaTV Widget software (from now, the "Software") and the accompanying materials
- *	are provided “AS IS” without warranty of any kind. IN NO EVENT SHALL THE AUTHOR(S) BE
- *	LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
- *	INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN
- *	IF THE AUTHOR(S) HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. The entire risk as to
- *	the results and performance of this software is assumed by you. If the software is
- *	defective, you, and not Claudio Procida, assume the entire cost of all necessary servicing,
- *	repairs and corrections. If you do not agree to these terms and conditions, you may not
- *	install or use this software.
  */
 
 /**
@@ -28,8 +31,6 @@ var req = null,
  */
 
 var NOTFOUND_MARKER = "<b>Nessun risultato trovato</b>",
-	RESULTS_START = "<!-- RISULTATO -->",
-	RESULTS_END = "<!-- /RISULTATO -->",
 	POLL_URL = "http://spettacolo.virgilio.it/guidatv/cgi/index.cgi",
 	POLL_HOST = "spettacolo.virgilio.it",
 	DESC_START = '<table cellpadding="0" cellspacing="0" border="0" width="100%" id="scheda">',
@@ -112,29 +113,27 @@ function handleResponse() {
 
 function parseResponse(text) {
 
-	text = text.substring(text.indexOf(RESULTS_START) + RESULTS_START.length, text.lastIndexOf(RESULTS_END));
-	
- 	var TOKEN_SEPARATOR = "<!-- /RISULTATO -->\n\n\t\t\t\t  \n\t\t\n\t\t\t\t   \t\n\t\t\n\t\t\t\t   \t\n\n\n<!-- RISULTATO -->",
- 		REGEXP = /\n+<tr valign="top">\n+\t+<td id="col-canale(-end)?">\n+\t+\n+<a href="\?tipo=3&channel=(\d+)">([^<]*)<\/a><\/td>\n+\t+\n+\t+\n+\t+<td id="col-orario(-end)?" bgcolor="#(E1D8AD|ECE7C9)">\n+\t+\n+\t+\n+\t+\n+\t+<div id="testo-orario(-chiaro)?">\n+\t+\n+(\d{2}:\d{2})<\/div><\/td>\n+\t+\n+\t+\n+\t+(\n+\t+)?<td id="col-programma(-chiaro)?(-end)?" bgcolor="#(D1D1D1|E4E4E2)">\n+\t+\n+\t+\n+\t+\n+<div id="bg-programma(-in-onda)?(-chiaro)?">(\n+)?(<img src="http:\/\/images\.virgilio\.it\/n_canali\/cinema\/guida_tv\/freccia_in_onda\.gif" alt="ora in onda"\/>)?<a href="\?tipo=1&qs=(\d+)">(.+)\n+<\/div><\/td>\n+\t+\n+\t+\n+\t+(\n+\t+)?<td id="col-genere(-chiaro)?(-end)?" bgcolor="#?(DFDFE1|ECECEE)">\n+\t+\n+\t+(\n+\t+)?<div id="testo-genere(-chiaro)?">\n+\t+\n+(.+)\n+<\/div>\n+<\/td>\n+<\/tr>\n+/;
+	// This is the Regular Expression that matches the program listed in the summary
+ 	var REGEXP = /<!--\s+RISULTATO\s+-->\s+<tr\s+valign="top">\s+<td\s+id="col-canale(-end)?">\s+<a\s+href="\?tipo=3&channel=([\d]+)">([^<]*)<\/a><\/td>\s+<td\s+id="col-orario(-end)?"\s+bgcolor="#(ECE7C9|E1D8AD)">\s+<div\s+id="testo-orario(-chiaro)?">\s+([^<]+)<\/div><\/td>\s+<td\s+id="col-programma(-chiaro)?(-end)?"\s+bgcolor="#(E4E4E2|D1D1D1)">\s+<div\s+id="bg-programma(-in-onda)?(-chiaro)?">\s*(<img\s+src="http:\/\/images.alice.it\/n_canali\/cinema\/guida_tv\/freccia_in_onda.gif"\s+alt="ora\s+in\s+onda"\/>)?\s*<a\s+href="\?tipo=1&qs=([^"]+)">([^<]+)\s+<\/div><\/td>\s+<td\s+id="col-genere(-chiaro)?(-end)?"\s+bgcolor="#?(ECECEE|DFDFE1)">\s+<div\s+id="testo-genere(-chiaro)?">\s+([^<]+)\s+<\/div>\s+<\/td>\s+<\/tr>\s+<!--\s+\/RISULTATO\s+-->/gi;
  		
 	var programs = new Array(),
-		tokens = text.split(TOKEN_SEPARATOR),
 		channel = null,
 		date = null,
 		time = null,
 		genre = null,
 		title = null;
-		
-	for (var i = 0; i < tokens.length; i++)
+	
+	var matches = null;
+
+	// Repeatedly call RegExp.exec() until matches are found
+	while (matches = REGEXP.exec(text))
 	{
-		var m = tokens[i].match(REGEXP);
-		if (!m) continue;
-		channel = m[2];
-		time = m[7];
-		onair = m[12];
-		progid = m[16];
-		title = m[17];
-		genre = m[24];
+		channel = matches[2];
+		time = matches[7];
+		onair = matches[11];
+		progid = matches[14];
+		title = matches[15];
+		genre = matches[20];
 		programs[programs.length] = new Program(channel, progid, time, genre, title, onair);
 	}
 	return programs;
