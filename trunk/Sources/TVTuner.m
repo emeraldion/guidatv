@@ -233,18 +233,14 @@ extern int TVSatelliteSource;
 		}
 		NSLog(@"bodyString:%@", bodyString);
 		
-		int start = [bodyString rangeOfString:RESULTS_START].location + [RESULTS_START length];
-		int end = [bodyString rangeOfString:RESULTS_END options:NSBackwardsSearch].location;
-		NSString *listing = [bodyString substringWithRange:NSMakeRange(start, end - start)];
-		
-		AGRegex *reg = [AGRegex regexWithPattern:@"\n+<tr valign=\"top\">\n+\t+<td id=\"col-canale(-end)?\">\n+\t+\n+<a href=\"\\?tipo=3\\&channel=(\\d+)\">([^<]*)<\\/a><\\/td>\n+\t+\n+\t+\n+\t+<td id=\"col-orario(-end)?\" bgcolor=\"#(E1D8AD|ECE7C9)\">\n+\t+\n+\t+\n+\t+\n+\t+<div id=\"testo-orario(-chiaro)?\">\n+\t+\n+(\\d{2}:\\d{2})<\\/div><\\/td>\n+\t+\n+\t+\n+\t+(\n+\t+)?<td id=\"col-programma(-chiaro)?(-end)?\" bgcolor=\"#(D1D1D1|E4E4E2)\">\n+\t+\n+\t+\n+\t+\n+<div id=\"bg-programma(-in-onda)?(-chiaro)?\">(\n+)?(<img src=\"http:\\/\\/images\\.virgilio\\.it\\/n_canali\\/cinema\\/guida_tv\\/freccia_in_onda\\.gif\" alt=\"ora in onda\"\\/>)?<a href=\"\\?tipo=1\\&qs=(\\d+)\">(.+)\n+<\\/div><\\/td>\n+\t+\n+\t+\n+\t+(\n+\t+)?<td id=\"col-genere(-chiaro)?(-end)?\" bgcolor=\"#?(DFDFE1|ECECEE)\">\n+\t+\n+\t+(\n+\t+)?<div id=\"testo-genere(-chiaro)?\">\n+\t+\n+(.+)\n+<\\/div>\n+<\\/td>\n+<\\/tr>\n+"
+		AGRegex *reg = [AGRegex regexWithPattern:@"<!--\\s+RISULTATO\\s+-->\\s+<tr\\s+valign=\"top\">\\s+<td\\s+id=\"col-canale(-end)?\">\\s+<a\\s+href=\"\\?tipo=3&channel=([\\d]+)\">([^<]*)<\\/a><\\/td>\\s+<td\\s+id=\"col-orario(-end)?\"\\s+bgcolor=\"#(ECE7C9|E1D8AD)\">\\s+<div\\s+id=\"testo-orario(-chiaro)?\">\\s+([^<]+)<\\/div><\\/td>\\s+<td\\s+id=\"col-programma(-chiaro)?(-end)?\"\\s+bgcolor=\"#(E4E4E2|D1D1D1)\">\\s+<div\\s+id=\"bg-programma(-in-onda)?(-chiaro)?\">\\s*(<img\\s+src=\"http:\\/\\/images.alice.it\\/n_canali\\/cinema\\/guida_tv\\/freccia_in_onda.gif\"\\s+alt=\"ora\\s+in\\s+onda\"\\/>)?\\s*<a\\s+href=\"\\?tipo=1&qs=([^\"]+)\">([^<]+)\\s+<\\/div><\\/td>\\s+<td\\s+id=\"col-genere(-chiaro)?(-end)?\"\\s+bgcolor=\"#?(ECECEE|DFDFE1)\">\\s+<div\\s+id=\"testo-genere(-chiaro)?\">\\s+([^<]+)\\s+<\\/div>\\s+<\\/td>\\s+<\\/tr>\\s+<!--\\s+\\/RISULTATO\\s+-->"
 										 options: AGRegexCaseInsensitive | AGRegexMultiline];
 		if (reg == nil)
 		{
 			NSLog(@"Invalid regex");
 			return;
 		}
-		NSArray *matches = [reg findAllInString:listing];
+		NSArray *matches = [reg findAllInString:bodyString];
 		int len = [matches count];
 		NSMutableArray *progs = [NSMutableArray arrayWithCapacity:len];
 		int k;
@@ -253,10 +249,11 @@ extern int TVSatelliteSource;
 			AGRegexMatch *match = (AGRegexMatch *)[matches objectAtIndex:k];
 			NSCalendarDate *date = [NSCalendarDate dateWithString:[day stringByAppendingString:[@" " stringByAppendingString:[match groupAtIndex:7]]]
 												   calendarFormat:@"%d/%m/%Y %H:%M"];
-			// Correct dates
-			TVProgram *prog = [TVProgram programWithTitle:[match groupAtIndex:17]
-												   progid:[match groupAtIndex:16]
-													genre:[[match groupAtIndex:24] capitalizedString]
+			
+			// Create program object
+			TVProgram *prog = [TVProgram programWithTitle:[match groupAtIndex:15]
+												   progid:[match groupAtIndex:14]
+													genre:[[match groupAtIndex:20] capitalizedString]
 												  channel:[[match groupAtIndex:2] intValue]
 												startDate:date];
 			[progs insertObject:prog
@@ -264,6 +261,7 @@ extern int TVSatelliteSource;
 			NSLog(@"prog:%@", prog);
 		}
 		
+		// Adjust dates to fill the schedule
 		TVProgram *prev, *next;
 		for (k = 0; k < len - 1; k++)
 		{
