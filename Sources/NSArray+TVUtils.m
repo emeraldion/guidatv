@@ -74,7 +74,7 @@
 											seconds:0] descriptionWithCalendarFormat:@"%d/%m/%Y"]
 				   atIndex:(days + d)];
 	}
-	return [dArr autorelease];
+	return dArr;
 }
 
 @end
